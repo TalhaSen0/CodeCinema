@@ -16,3 +16,7 @@ Başlangıç: 15 Ekim 2026; teslim oturumu: 16 Ekim 2026 (Europe/Istanbul). Çal
 Yeni film hazırlığı `npm run new` ile pendulum örneğinde doğrulandı. Bu örnek yalnızca brief-ready; ikinci film yapılmış gibi işaretlenmedi. Yeni sahnelerin yaratıcı üretimi için Codex oturumu gerekir, motor yeniden yazılmaz.
 
 Kalan kalite geliştirmeleri: daha doğal ve açık ticari lisanslı Türkçe anlatım; Chatterbox küçük gerçek benchmark'ı; daha geniş yüz/beden/nesne rig repertuvarı; bağımsız yerel illüstrasyon modeliyle gerçekten farklı hibrit sanat deneyi. Bunlar mevcut teslimde tamamlanmış sayılmaz.
+
+## 16 Ekim — onaylı geçiş düzeltmesi
+
+Önce cc2b213 Git baseline ve eski MP4 korundu. PageSurface/homography/textured curl, ortak kitap UV içeriği, anatomik IK ve temporal QA uygulandı. Yerel testlerde omuz boşluğu, kitap dışı projektif tekillik, ön plan sıçraması ve küçük doku aliasing bulunup düzeltildi. Yerel klipler geçtikten sonra tam taslak ve final render edildi. Güncel kanıt ve sınırlar docs/page-surface-implementation.md içinde; teslim galileo-final-v2.mp4 ve yan yana galileo-before-after.mp4.

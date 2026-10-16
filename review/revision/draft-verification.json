@@ -1,0 +1,463 @@
+{
+  "video": "renders/galileo-draft.mp4",
+  "checks": {
+    "resolution": {
+      "ok": true,
+      "detail": [
+        960,
+        540
+      ]
+    },
+    "fps and frame count": {
+      "ok": true,
+      "detail": {
+        "fps": "30/1",
+        "frames": "1440"
+      }
+    },
+    "codecs": {
+      "ok": true,
+      "detail": {
+        "video": "h264",
+        "audio": "aac"
+      }
+    },
+    "HD colour": {
+      "ok": true,
+      "detail": {
+        "pixelFormat": "yuv420p",
+        "space": "bt709",
+        "range": "tv"
+      }
+    },
+    "duration sync": {
+      "ok": true,
+      "detail": {
+        "video": "48.000000",
+        "audio": "48.000000"
+      }
+    },
+    "complete decode": {
+      "ok": true,
+      "detail": "1440 frames decoded"
+    },
+    "nonempty frames": {
+      "ok": true,
+      "detail": {
+        "empty": [],
+        "minMean": 49.04108796296296,
+        "minContrast": 31.066252867779767
+      }
+    },
+    "unexpected jumps": {
+      "ok": true,
+      "detail": {
+        "threshold": 25,
+        "maxDifference": 7.0326003086419755,
+        "jumps": []
+      }
+    },
+    "seek determinism": {
+      "ok": true,
+      "detail": [
+        {
+          "t": 0.1,
+          "ok": true
+        },
+        {
+          "t": 4.7,
+          "ok": true
+        },
+        {
+          "t": 5.8,
+          "ok": true
+        },
+        {
+          "t": 7,
+          "ok": true
+        },
+        {
+          "t": 10,
+          "ok": true
+        },
+        {
+          "t": 11.5,
+          "ok": true
+        },
+        {
+          "t": 13.9,
+          "ok": true
+        },
+        {
+          "t": 14,
+          "ok": true
+        },
+        {
+          "t": 19,
+          "ok": true
+        },
+        {
+          "t": 24,
+          "ok": true
+        },
+        {
+          "t": 26.2,
+          "ok": true
+        },
+        {
+          "t": 28.99,
+          "ok": true
+        },
+        {
+          "t": 29,
+          "ok": true
+        },
+        {
+          "t": 35.5,
+          "ok": true
+        },
+        {
+          "t": 38.5,
+          "ok": true
+        },
+        {
+          "t": 41,
+          "ok": true
+        },
+        {
+          "t": 42.6,
+          "ok": true
+        },
+        {
+          "t": 44,
+          "ok": true
+        },
+        {
+          "t": 47.96,
+          "ok": true
+        }
+      ]
+    },
+    "browser errors": {
+      "ok": true,
+      "detail": []
+    },
+    "text overflow": {
+      "ok": true,
+      "detail": {
+        "samples": 192,
+        "overflow": []
+      }
+    },
+    "narration fit": {
+      "ok": true,
+      "detail": [
+        {
+          "start": 0.8,
+          "end": 7.755979166666666,
+          "slotEnd": 7.9
+        },
+        {
+          "start": 9,
+          "end": 13.129666666666667,
+          "slotEnd": 14.2
+        },
+        {
+          "start": 15,
+          "end": 20.987395833333334,
+          "slotEnd": 22.8
+        },
+        {
+          "start": 24.8,
+          "end": 31.525458333333333,
+          "slotEnd": 32.7
+        },
+        {
+          "start": 33.2,
+          "end": 39.95370833333334,
+          "slotEnd": 40.9
+        },
+        {
+          "start": 42.2,
+          "end": 45.52133333333334,
+          "slotEnd": 47.2
+        }
+      ]
+    },
+    "shared audio events": {
+      "ok": true,
+      "detail": [
+        {
+          "t": 4.7,
+          "type": "page"
+        },
+        {
+          "t": 10,
+          "type": "reveal"
+        },
+        {
+          "t": 17.5,
+          "type": "release"
+        },
+        {
+          "t": 24.5,
+          "type": "page"
+        },
+        {
+          "t": 29,
+          "type": "reveal"
+        },
+        {
+          "t": 34,
+          "type": "release"
+        },
+        {
+          "t": 41,
+          "type": "page"
+        }
+      ]
+    },
+    "audio clipping": {
+      "ok": true,
+      "detail": {
+        "decodedStereoPeak": 0.8945780992507935
+      }
+    },
+    "scientific time order": {
+      "ok": true,
+      "detail": [
+        {
+          "id": "line",
+          "time": 1.7486845739742396
+        },
+        {
+          "id": "circle",
+          "time": 1.4381016255852004
+        },
+        {
+          "id": "cycloid",
+          "time": 1.3952773979847248
+        }
+      ]
+    }
+  },
+  "hashes": [
+    {
+      "t": 0.1,
+      "hash": "f2bec2feeb9349a1d6f659c6e96bda29aea7a3794b88116b036862ff96a33889",
+      "ok": true
+    },
+    {
+      "t": 4.7,
+      "hash": "b91c5a25fc6858775d53f9e13a9a11c290cfe12f3357287b9775778d80c75106",
+      "ok": true
+    },
+    {
+      "t": 5.8,
+      "hash": "28d7d16e5386244a2dd4e5ac58bc2e34844a5821a55e4385c1f48293103e3f38",
+      "ok": true
+    },
+    {
+      "t": 7,
+      "hash": "5fcff07a7951abce9d99f6008ccf7f59a8b0f628c5f46481378afa6dc6865a2c",
+      "ok": true
+    },
+    {
+      "t": 10,
+      "hash": "0a905f67bf5e5f9e240d2fabe63c489b6c556bfdeb5a95c0a70753a7c710e883",
+      "ok": true
+    },
+    {
+      "t": 11.5,
+      "hash": "7e86e850abd54a7b482a6dc56ab09d6edc4756c92e19b05dd518757ab76fca86",
+      "ok": true
+    },
+    {
+      "t": 13.9,
+      "hash": "eeca37a93f75d383571db13deabe3e4b0137501760ed489ef49134f875eb16e2",
+      "ok": true
+    },
+    {
+      "t": 14,
+      "hash": "79d9368c4145982084b392d485797898b2244a9346a2e39e8d853269dcb041d0",
+      "ok": true
+    },
+    {
+      "t": 19,
+      "hash": "3566bcdcb4ca929b90a580231ec80fff5f9a0f9abbfa66caffee52df4f57ae9e",
+      "ok": true
+    },
+    {
+      "t": 24,
+      "hash": "73ba5c1c5b40fea3db1c1cca77f919402c99ae603b55226e6cd0c22c1cabae6c",
+      "ok": true
+    },
+    {
+      "t": 26.2,
+      "hash": "acd2e8713747b5179fbdee5f039046b28e4b5891e4057b48d29556c3575aec35",
+      "ok": true
+    },
+    {
+      "t": 28.99,
+      "hash": "db6ff430f78cbb87a52995841f4dab97ab212e26936681ee98a603546a0f0e58",
+      "ok": true
+    },
+    {
+      "t": 29,
+      "hash": "db6ff430f78cbb87a52995841f4dab97ab212e26936681ee98a603546a0f0e58",
+      "ok": true
+    },
+    {
+      "t": 35.5,
+      "hash": "7f275a596e45a58ecfcf59cd3d79dfae53f991c74206c947cd41dd3fd291369c",
+      "ok": true
+    },
+    {
+      "t": 38.5,
+      "hash": "5e6fa4e40035fc078618018fd41779270f2ef0d53bbfd50ae7405f1699afc683",
+      "ok": true
+    },
+    {
+      "t": 41,
+      "hash": "d57b71a53aec5035d1ea7057720a2c6a295364650a91904a560581e842109f28",
+      "ok": true
+    },
+    {
+      "t": 42.6,
+      "hash": "5ef329b9613f3eb48f6d431b78b8ce787ef879c5d3134ac1a1a03b575fff9673",
+      "ok": true
+    },
+    {
+      "t": 44,
+      "hash": "22239c4470d313064b747c6f7abadedced2e0dceba2bb1adcdb0f1b719fa7e76",
+      "ok": true
+    },
+    {
+      "t": 47.96,
+      "hash": "fdeb78fdd6e48e2318f6392a5fc439f424769dd7397b97a2495f318f8814832e",
+      "ok": true
+    }
+  ],
+  "failures": [],
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_time_base": "1/60",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 960,
+        "height": 540,
+        "coded_width": 960,
+        "coded_height": 544,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 31,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "chroma_location": "left",
+        "refs": 4,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 737280,
+        "duration": "48.000000",
+        "bit_rate": "502140",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "1440",
+        "nb_read_frames": "1440",
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "encoder": "Lavc61.19.100 libx264"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_time_base": "1/48000",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 2304000,
+        "duration": "48.000000",
+        "bit_rate": "193111",
+        "max_bit_rate": "193111",
+        "nb_frames": "2251",
+        "nb_read_frames": "2250",
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler"
+        }
+      }
+    ],
+    "format": {
+      "filename": "renders/galileo-draft.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "48.000000",
+      "size": "4225034",
+      "bit_rate": "704172",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf61.7.100"
+      }
+    }
+  }
+}

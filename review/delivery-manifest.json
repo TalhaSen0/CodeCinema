@@ -1,10 +1,12 @@
 {
-  "created": "2026-10-15T21:31:35.836Z",
+  "created": "2026-10-16T10:38:27.746Z",
   "inputs": {
     "engine/math.mjs": "55d8cced2ddf5beec11990c442d10d7d2bddcad09a1db749df7a93dd00bee51b",
+    "engine/page-surface.mjs": "c73b80244d201a2c4268cffd21b1e75f3cf5a96c783ffcb646bb870c7c7becf7",
     "engine/paint.mjs": "0271b97d6c16abe12927449019b07387007eedd9e6b5e8f36ed8e0aa1534833d",
     "engine/physics.mjs": "d39ca9f6aa3908ad3b6fab11b002b1978990158c7c029d9cb6aed7ecc4e01fe5",
-    "engine/warp.mjs": "feea48ab568fb7bb16f4c18aaef0057ab7c528b62a7589ea6a12d6f42c2b07dc",
+    "engine/rigging.mjs": "3e1d1c9d7c76831504eea4385ffc3a5867e6140228ec303a00b1bbb4352688ba",
+    "engine/warp.mjs": "aa4444a3ff67ab27a7dd48e37e6bc02a525ed55798c3aad0e5c18c1f1b280071",
     "films/galileo/assets/mix.wav": "777588025e852e42451e662ee4d89a4abe4e9153537ad701d6e18b8071c0e3ab",
     "films/galileo/assets/narration.wav": "80613b8bf3396fce8df716b996def43e5cae009d3708f69be13d409583866fed",
     "films/galileo/assets/score.wav": "8495fbdbf06a2e2787204a9333a4c1a5481103c91bf4658af8bed0c906b757ff",
@@ -14,49 +16,71 @@
     "films/galileo/assets/voice-3.wav": "147373fa5688fa3ef9e5a01763af40d0fe62d03c00bca15df422e600dc16c9d8",
     "films/galileo/assets/voice-4.wav": "7689a06e55b2f8eb4151ce363367883202b1313574493d1718d59e0bbabfa0dd",
     "films/galileo/assets/voice-5.wav": "8b2eb28238b51807ba9894a2e3d84ef4fedcdf2924da7abfbfb9f8a5734ef242",
-    "films/galileo/character.mjs": "78412bcf4974b506b3f778d9091999943a1c2845cc0845ef00c4a948bbf78538",
+    "films/galileo/character.mjs": "b3b5bd398eeb544c31dd149d5d1b04f94f1ac6559be76b096edfd99a5fd95599",
     "films/galileo/compare-a.html": "4bc36503a934ef22b471e5f56beb66d477de9ca9f2e3106d900a3611c21a450b",
     "films/galileo/compare-b.html": "e5c7a627c27f5c84d34c8fbe227b4b0f137f3ebe01c25d26815c37ae2c4d135d",
     "films/galileo/draft.html": "cb23569378909b953f99536fc83f7084182c44acab9e7f044b886c5845bc4355",
-    "films/galileo/film.mjs": "2b935e16888c8f3129ccf81bf605040616e7610e04e7978e60cf3f79c8f20b60",
+    "films/galileo/film.mjs": "8bb85a28e213c1f84a65f4e626c1840ba30dcccf307ee08bb9ac2e534b3e39f1",
     "films/galileo/index.html": "e677a2a7f0a7151e68778a3a90b4f9e73be34788ddff11128c89de6a507fd505",
-    "films/galileo/motion.mjs": "8e311b92cb1acf56988ba2bd892dbaf1df53af3c6d568259ca286e93b0ef9a62",
-    "films/galileo/production.mjs": "5543587679ca4bcea7d79eb71bee9593542416793d1720fa39e6f09f6ae36760",
-    "films/galileo/room.mjs": "a4627f30dc0c5b600204e9ba930ec1e1e8a7b285cf876155c05f4970b10061dd",
+    "films/galileo/motion.mjs": "c79640132b5e5304db796b08dd285d1cb2f87843c74d72ef7375e8ff93ebd3ff",
+    "films/galileo/page-content.mjs": "f1553446a9b8a6ad5da2975c65b61235064b6fc8203f512bedfc642b729251c7",
+    "films/galileo/pages.mjs": "7af69bf5fd2efa7da9827aa19d417e56b8cb61c2507c944baae7464ccadf9e3b",
+    "films/galileo/production.mjs": "504de1c3732d1deb8738a6bb9f90871c55f33a5917388e37eeb78f7abeb55f28",
+    "films/galileo/room.mjs": "3cd8a0cf112f3b31043b7c81c9c16ef4f8e902466074f9eda11826f7e22b1f50",
     "tools/alternate.mjs": "4a7e1608bf8998e68843bd0839ce4ecd90123f22373ed2fe989322de7b01eb2f",
     "tools/audio.py": "73c1c02dd4f332d1ce99a328dd1c45dc9db1f539644540719bbc545f117e7311",
-    "tools/capture.mjs": "2d0b6521c0724265de77570a4d909aae8fb6a4d254fd11b63a2b552c309e3a97",
+    "tools/capture-baseline.mjs": "0652395591957324dab430c37e2f627d1dfb70d1e3b21e790abc4516bfeff45c",
+    "tools/capture.mjs": "c6332672d27d37ca80b31cfc747ef0adda7e135d26690854f7562fbf33cb50f0",
     "tools/common.mjs": "d3ddf38b64041d2703d41b8855fd7d0859652da80c702525eb1507ca9f1d93a5",
+    "tools/compare-revision.py": "a2f4d7b78035619faac5228e3f04cb474c2c398210f8a3d017b53bdfaf823aa1",
     "tools/compare.mjs": "b2c32a4dde8f6aab94bc1cf75140b287767c3612fbfda1ea5364bf3d3519b357",
     "tools/contact-sheet.py": "4828b6f1d656b6047f2de161249ff77fec4c2ef01878f6d1cad96dd353a6d372",
     "tools/dev.mjs": "62a8c2f294e3a81e279e18281dbb9782e8596dec0cbc6bb367ab6fa3177b8a97",
     "tools/new-film.mjs": "4e601eac8e114853ebc06cdd41011b712a3c688033309a6b85b4fa2398bf78c2",
-    "tools/package-source.py": "c2fbe59f28a9ea1eb50b2dc68670120c67a1bcdbfc0bd93a0d4b9c561502fc00",
-    "tools/provenance.mjs": "710f717c5e0c2728e40ac4baab3048770bfb7f54d8e475de7dfc0ba66c7e04ce",
+    "tools/package-source.py": "65822a1c8c32661f4249ae16c4c455990d28f6222e26667d771f410d2169def9",
+    "tools/provenance.mjs": "c3f642b8d4d9036fe00f21e0c225d0be849f4a21e649e5473e64ce93a8b24e82",
+    "tools/render-transition-tests.mjs": "131395d84124ece16481a05e5e36e46aaf975f03cea976aa3243b82078fe8b28",
     "tools/render.mjs": "713a4bdb29472cefcbdcacd9350e8537b644b7a32b8096aeac9649b9bbd762d8",
-    "tools/review-encoded.py": "493d21294fcf929726780761ff1f5601b1c5e2712d2bb7896324e377cac6545f",
+    "tools/review-encoded.py": "2c4f6318eac550317c812a818b65ddb7948bacb030632bd9af7d3a6b2c231b55",
+    "tools/review-transitions.mjs": "5b94133d29f056037d0fe2a1da26f5ed2a925e5a7136e020afa20dcb71ed6129",
     "tools/sequence.mjs": "95f124ca11e7458fadd159e11cb0cf3117190a763df2a240d06bfac08c93291d",
     "tools/setup.mjs": "221feb3fd974b66a5ee4da6fe40472b9e2856ab7a9210ae09dfee617e23f7c32",
     "tools/smoke.mjs": "478b73d77e58e83195f9132dd7b0195c7aa47781cf490d2da7b4ba9ef44745e4",
+    "tools/transition-sheets.py": "522cc048bbd4b085a1081bf26492c94a6de7616c6af6d8d690e0b8e7c9482cff",
     "tools/upstream/lib.mjs": "4be9bf1da64cf20c12fcf1de3815a070a52558807c926a8fc19353aa8c6b1c31",
     "tools/upstream/render.mjs": "a5884f703156eeecf45aeef7885424a1c40073a58fbc3ed147a0382ed4a29c84",
     "tools/upstream/verify.mjs": "916f778074550d723136a1fd80a8607bd4c6dba27ac2b3f173dacf2b4e303fa6",
-    "tools/verify.mjs": "a30c01daa09469f1dc1441de4c5e8c1c618c4a64cf8acc220184ec2b6c3fe19f",
-    "package.json": "ed3d9e1b768733be3703b0981e259ce036d0afb370a2390b7f81ffee95a00795",
+    "tools/verify-style.py": "c50d40fb537beb58b85993fe5dfe7ce3ab44a2f3d8ac28d2db3805ba401f6fc1",
+    "tools/verify-surfaces.mjs": "bb44940e886df365dea435fb6ad88b80b20732a9a87647f13c82d55eef91bbe4",
+    "tools/verify-transition-clips.py": "793a4934864dbfce9b5496093ac659378fd6b5307c7ff6bf886942cb2a8e5586",
+    "tools/verify.mjs": "d2e4f3014853447e6d0ffc6374c7fe55789d3a7ea1c31e6de1d12de0439e58f4",
+    "package.json": "6eb8e65f7d8329a878e0d58ea68f86d9eac2ef9c6a05c3656dcf5523c601bbdb",
     "package-lock.json": "a6f3e865380aa0075d9e6f6fc75f731f37b206da08f8fbec04358f8ab0312c68"
   },
   "outputs": {
     "renders/galileo-final.mp4": {
+      "bytes": 15385104,
+      "sha256": "05465b762258dfd4ad58c5bed9b439cf676d7706c08a183a9c117342e10789c1"
+    },
+    "renders/galileo-final-v2.mp4": {
+      "bytes": 15385104,
+      "sha256": "05465b762258dfd4ad58c5bed9b439cf676d7706c08a183a9c117342e10789c1"
+    },
+    "renders/galileo-before-pages.mp4": {
       "bytes": 12279337,
       "sha256": "fd41ca6b6f2bfa9fa507e9239e039b37190458fb56a480ff2f3ac7106068ae33"
     },
+    "renders/galileo-before-after.mp4": {
+      "bytes": 5101619,
+      "sha256": "41036bea082b2d8f2d1ace9e7edddf5e69f3590b0033831d2815978984627950"
+    },
     "renders/galileo-draft.mp4": {
-      "bytes": 3687316,
-      "sha256": "4c52c7e85fee68b441f3407315d79bc0b6aafa010eb4ffb6f0b7b88198b37e4a"
+      "bytes": 4225034,
+      "sha256": "99d8a2a84e5cc0ee913beba7925efb301e2a2c5e925ae016d4f46c5127a1d9ea"
     },
     "renders/galileo-music-only.mp4": {
-      "bytes": 12275296,
-      "sha256": "e938ea7a0de4cd3187a9a6e67ed25490630a1564e867654ba12a778b508e36a3"
+      "bytes": 15381063,
+      "sha256": "e0903fcd49368d1d5a6e5d8400fb40eb38535e7d6d75125db5abd7e15e80234f"
     }
   }
 }

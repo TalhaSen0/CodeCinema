@@ -1,0 +1,26 @@
+[
+  {
+    "clip": "arm",
+    "frames": 108,
+    "maxFrameDifference": 0.48842592592592593,
+    "completeDecode": true
+  },
+  {
+    "clip": "entry",
+    "frames": 150,
+    "maxFrameDifference": 5.793595679012346,
+    "completeDecode": true
+  },
+  {
+    "clip": "turn",
+    "frames": 180,
+    "maxFrameDifference": 1.5669367283950617,
+    "completeDecode": true
+  },
+  {
+    "clip": "exit",
+    "frames": 120,
+    "maxFrameDifference": 7.032021604938271,
+    "completeDecode": true
+  }
+]

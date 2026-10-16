@@ -9,6 +9,8 @@ for name in ['AGENTS.md','README.md','package.json','package-lock.json','require
     p=root/name
     if p.exists():files.append(p)
 for name in ['contact-sheet.jpg','face-hand-crop.png','hand-strip.jpg','race-strip.jpg','portal-strip.jpg','return-strip.jpg']:files.append(root/'review/encoded'/name)
+for p in (root/'review/revision').rglob('*'):
+    if p.is_file() and (p.suffix=='.json' or p.name.startswith('sheet-') or '-strip-' in p.name or p.name in ['before-after.jpg','style-before-after.jpg','contact-sheet.jpg','key-2.000.png','key-12.000.png','key-26.000.png','key-44.000.png']):files.append(p)
 with zipfile.ZipFile(dest,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
     for p in sorted(set(files)):z.write(p,Path('CodeCinema')/p.relative_to(root))
 with zipfile.ZipFile(dest) as z:

@@ -8,7 +8,9 @@
     "render:draft": "node tools/render.mjs draft",
     "render:final": "node tools/render.mjs final",
     "review:frames": "node tools/capture.mjs",
-    "verify": "node --test tests/*.test.mjs && node tools/verify.mjs",
+    "review:transitions": "node tools/review-transitions.mjs",
+    "verify:surfaces": "node tools/verify-surfaces.mjs",
+    "verify": "node --test tests/*.test.mjs && node tools/verify.mjs && node tools/verify-surfaces.mjs",
     "new": "node tools/new-film.mjs"
   },
   "dependencies": {"playwright": "1.56.1", "ffprobe-static": "3.1.0"}

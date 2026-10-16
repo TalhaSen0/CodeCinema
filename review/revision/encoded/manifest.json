@@ -1,0 +1,129 @@
+{
+  "video": "C:\\Users\\TalhaSen\\OneDrive\\Belgeler\\My Apps\\CodeCinema\\renders\\galileo-final-v2.mp4",
+  "frames": [
+    {
+      "t": 0,
+      "file": "encoded-00.png"
+    },
+    {
+      "t": 2,
+      "file": "encoded-01.png"
+    },
+    {
+      "t": 4.7,
+      "file": "encoded-02.png"
+    },
+    {
+      "t": 5.5,
+      "file": "encoded-03.png"
+    },
+    {
+      "t": 6,
+      "file": "encoded-04.png"
+    },
+    {
+      "t": 7,
+      "file": "encoded-05.png"
+    },
+    {
+      "t": 10,
+      "file": "encoded-06.png"
+    },
+    {
+      "t": 11,
+      "file": "encoded-07.png"
+    },
+    {
+      "t": 12,
+      "file": "encoded-08.png"
+    },
+    {
+      "t": 13,
+      "file": "encoded-09.png"
+    },
+    {
+      "t": 14,
+      "file": "encoded-10.png"
+    },
+    {
+      "t": 16,
+      "file": "encoded-11.png"
+    },
+    {
+      "t": 18,
+      "file": "encoded-12.png"
+    },
+    {
+      "t": 19.5,
+      "file": "encoded-13.png"
+    },
+    {
+      "t": 21,
+      "file": "encoded-14.png"
+    },
+    {
+      "t": 24,
+      "file": "encoded-15.png"
+    },
+    {
+      "t": 25.5,
+      "file": "encoded-16.png"
+    },
+    {
+      "t": 27,
+      "file": "encoded-17.png"
+    },
+    {
+      "t": 29,
+      "file": "encoded-18.png"
+    },
+    {
+      "t": 31,
+      "file": "encoded-19.png"
+    },
+    {
+      "t": 34,
+      "file": "encoded-20.png"
+    },
+    {
+      "t": 35.5,
+      "file": "encoded-21.png"
+    },
+    {
+      "t": 36.3,
+      "file": "encoded-22.png"
+    },
+    {
+      "t": 37,
+      "file": "encoded-23.png"
+    },
+    {
+      "t": 39,
+      "file": "encoded-24.png"
+    },
+    {
+      "t": 41,
+      "file": "encoded-25.png"
+    },
+    {
+      "t": 42,
+      "file": "encoded-26.png"
+    },
+    {
+      "t": 43,
+      "file": "encoded-27.png"
+    },
+    {
+      "t": 44,
+      "file": "encoded-28.png"
+    },
+    {
+      "t": 46,
+      "file": "encoded-29.png"
+    },
+    {
+      "t": 47.96,
+      "file": "encoded-30.png"
+    }
+  ]
+}

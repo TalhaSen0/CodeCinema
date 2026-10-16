@@ -1,4 +1,5 @@
 export const DURATION=48;
+export const CLIPS={firstTurn:[4.7,6.9],entry:[10,14],chapterTurn:[24,28.5],exit:[41,44]};
 export const narration=[
  {start:0.8,end:7.9,text:'Bin altı yüz otuz sekiz. Galileo’nun hareket üzerine çalışmaları yayımlanır. En kısa yol, en hızlı yol mudur?'},
  {start:9,end:14.2,text:'Aynı iki nokta arasında, düz bir rampa en kısa mesafeyi sunar.'},

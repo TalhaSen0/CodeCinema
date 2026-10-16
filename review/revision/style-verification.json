@@ -1,0 +1,87 @@
+{
+  "baseline": "cc2b213",
+  "checks": [
+    {
+      "source": "films/galileo/character.mjs",
+      "function": "head",
+      "unchanged": true
+    },
+    {
+      "source": "films/galileo/character.mjs",
+      "function": "torso",
+      "unchanged": true
+    },
+    {
+      "source": "films/galileo/character.mjs",
+      "function": "hand",
+      "unchanged": true
+    },
+    {
+      "source": "films/galileo/room.mjs",
+      "function": "scenery",
+      "unchanged": true
+    },
+    {
+      "source": "engine/paint.mjs",
+      "unchanged": true
+    },
+    {
+      "source": "engine/physics.mjs",
+      "unchanged": true
+    },
+    {
+      "audio": "films/galileo/assets/mix.wav",
+      "unchanged": true
+    },
+    {
+      "audio": "films/galileo/assets/narration.wav",
+      "unchanged": true
+    },
+    {
+      "audio": "films/galileo/assets/score.wav",
+      "unchanged": true
+    },
+    {
+      "audio": "films/galileo/assets/voice-0.wav",
+      "unchanged": true
+    },
+    {
+      "audio": "films/galileo/assets/voice-1.wav",
+      "unchanged": true
+    },
+    {
+      "audio": "films/galileo/assets/voice-2.wav",
+      "unchanged": true
+    },
+    {
+      "audio": "films/galileo/assets/voice-3.wav",
+      "unchanged": true
+    },
+    {
+      "audio": "films/galileo/assets/voice-4.wav",
+      "unchanged": true
+    },
+    {
+      "audio": "films/galileo/assets/voice-5.wav",
+      "unchanged": true
+    },
+    {
+      "region": "head",
+      "rmse": 0.01276569477008451,
+      "tolerance": 5,
+      "ok": true
+    },
+    {
+      "region": "bookcase",
+      "rmse": 0.0044543540318737395,
+      "tolerance": 5,
+      "ok": true
+    },
+    {
+      "region": "window",
+      "rmse": 0.023487832987272778,
+      "tolerance": 5,
+      "ok": true
+    }
+  ]
+}

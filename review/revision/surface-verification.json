@@ -1,0 +1,787 @@
+{
+  "rows": [
+    {
+      "t": 2,
+      "points": [
+        {
+          "expected": {
+            "x": 1080.1115585994348,
+            "y": 832.6073440589993,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1080.3163265306123,
+            832.5816326530612
+          ],
+          "error": 0.20637582715523642
+        },
+        {
+          "expected": {
+            "x": 1209.876567813257,
+            "y": 843.3317012320096,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1209.85,
+            843.2
+          ],
+          "error": 0.1343542452402784
+        }
+      ],
+      "state": {
+        "under": "galileo",
+        "front": "notes",
+        "time": 14,
+        "curl": 0
+      }
+    },
+    {
+      "t": 9.5,
+      "points": [
+        {
+          "expected": {
+            "x": 1085.3490670004653,
+            "y": 845.8024941655823,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1085.2924528301887,
+            845.877358490566
+          ],
+          "error": 0.09386070227406819
+        },
+        {
+          "expected": {
+            "x": 1220.7724440655397,
+            "y": 856.9944840095317,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1220.9146341463415,
+            857.0365853658536
+          ],
+          "error": 0.14829208772747562
+        }
+      ],
+      "state": {
+        "under": "galileo",
+        "front": "galileo",
+        "time": 14,
+        "curl": 0
+      }
+    },
+    {
+      "t": 10,
+      "points": [
+        {
+          "expected": {
+            "x": 1085.6982032350375,
+            "y": 846.6821501210798,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1085.68,
+            846.76
+          ],
+          "error": 0.07994974304975234
+        },
+        {
+          "expected": {
+            "x": 1221.498801425902,
+            "y": 857.9053151956301,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1221.378048780488,
+            857.9634146341464
+          ],
+          "error": 0.13400278403974925
+        }
+      ],
+      "state": {
+        "under": "galileo",
+        "front": "galileo",
+        "time": 14,
+        "curl": 0
+      }
+    },
+    {
+      "t": 10.1,
+      "points": [
+        {
+          "expected": {
+            "x": 1084.4446133054917,
+            "y": 845.6042475263106,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1084.311320754717,
+            845.7264150943396
+          ],
+          "error": 0.18080879063296917
+        },
+        {
+          "expected": {
+            "x": 1221.4601474115873,
+            "y": 857.3975009918419,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1221.3478260869565,
+            857.3913043478261
+          ],
+          "error": 0.11249212578608275
+        }
+      ],
+      "state": {
+        "under": "galileo",
+        "front": "galileo",
+        "time": 14,
+        "curl": 0
+      }
+    },
+    {
+      "t": 10.5,
+      "points": [
+        {
+          "expected": {
+            "x": 1055.298885330729,
+            "y": 818.6500875909729,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1055.3144329896907,
+            818.6340206185567
+          ],
+          "error": 0.022357935991708423
+        },
+        {
+          "expected": {
+            "x": 1218.1016106458783,
+            "y": 843.1306413241966,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1218.1875,
+            843.2125
+          ],
+          "error": 0.118650006134527
+        }
+      ],
+      "state": {
+        "under": "galileo",
+        "front": "galileo",
+        "time": 14,
+        "curl": 0
+      }
+    },
+    {
+      "t": 11,
+      "points": [
+        {
+          "expected": {
+            "x": 975.5247633650606,
+            "y": 746.5312559173984,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            975.5,
+            746.5
+          ],
+          "error": 0.03987676794252662
+        },
+        {
+          "expected": {
+            "x": 1209.7291442815952,
+            "y": 806.8682912589676,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1209.759574468085,
+            806.9595744680851
+          ],
+          "error": 0.09622172580344426
+        }
+      ],
+      "state": {
+        "under": "galileo",
+        "front": "galileo",
+        "time": 14,
+        "curl": 0
+      }
+    },
+    {
+      "t": 12,
+      "points": [
+        {
+          "expected": {
+            "x": 740.2223299268892,
+            "y": 555.4663629527793,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            740.3921095008052,
+            555.4798711755234
+          ],
+          "error": 0.17031610552382967
+        },
+        {
+          "expected": {
+            "x": 1201.2777003589767,
+            "y": 737.0026825451394,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1201.4287553648069,
+            737.2030042918454
+          ],
+          "error": 0.2508912453429207
+        }
+      ],
+      "state": {
+        "under": "galileo",
+        "front": "galileo",
+        "time": 14,
+        "curl": 0
+      }
+    },
+    {
+      "t": 13,
+      "points": [
+        {
+          "expected": {
+            "x": 512.3349568665307,
+            "y": 407.56628886933515,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            512.5,
+            407.5
+          ],
+          "error": 0.1778579492266545
+        },
+        {
+          "expected": {
+            "x": 1225.3053769229384,
+            "y": 741.6456107502628,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1225.5,
+            741.5
+          ],
+          "error": 0.2430650791804733
+        }
+      ],
+      "state": {
+        "under": "galileo",
+        "front": "galileo",
+        "time": 14,
+        "curl": 0
+      }
+    },
+    {
+      "t": 13.9,
+      "points": [
+        {
+          "expected": {
+            "x": 411.20653454871564,
+            "y": 355.5669158979477,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            411.5,
+            355.5
+          ],
+          "error": 0.30099785463634227
+        },
+        {
+          "expected": {
+            "x": 1249.6509906229935,
+            "y": 774.4745781043974,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1249.5,
+            774.5
+          ],
+          "error": 0.1531157764830067
+        }
+      ],
+      "state": {
+        "under": "galileo",
+        "front": "galileo",
+        "time": 14,
+        "curl": 0
+      }
+    },
+    {
+      "t": 14,
+      "points": [
+        {
+          "expected": {
+            "x": 410,
+            "y": 355,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            410,
+            355
+          ],
+          "error": 0
+        },
+        {
+          "expected": {
+            "x": 1250,
+            "y": 775,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1250,
+            775
+          ],
+          "error": 0
+        }
+      ],
+      "state": {
+        "under": "galileo",
+        "front": "galileo",
+        "time": 14,
+        "curl": 0
+      }
+    },
+    {
+      "t": 40.5,
+      "points": [
+        {
+          "expected": {
+            "x": 410,
+            "y": 355,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            410,
+            355
+          ],
+          "error": 0
+        },
+        {
+          "expected": {
+            "x": 1250,
+            "y": 775,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1250,
+            775
+          ],
+          "error": 0
+        }
+      ],
+      "state": {
+        "under": "bernoulli",
+        "front": "bernoulli",
+        "time": 40.5,
+        "curl": 0
+      }
+    },
+    {
+      "t": 41,
+      "points": [
+        {
+          "expected": {
+            "x": 410,
+            "y": 355,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            410,
+            355
+          ],
+          "error": 0
+        },
+        {
+          "expected": {
+            "x": 1250,
+            "y": 775,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1250,
+            775
+          ],
+          "error": 0
+        }
+      ],
+      "state": {
+        "under": "bernoulli",
+        "front": "bernoulli",
+        "time": 41,
+        "curl": 0
+      }
+    },
+    {
+      "t": 42,
+      "points": [
+        {
+          "expected": {
+            "x": 580.9944527028621,
+            "y": 449.29906251192574,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            580.5,
+            449.5
+          ],
+          "error": 0.5337221650645648
+        },
+        {
+          "expected": {
+            "x": 1216.0573705617755,
+            "y": 733.5100991841291,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1216.5,
+            733.5
+          ],
+          "error": 0.44274463644743633
+        }
+      ],
+      "state": {
+        "under": "bernoulli",
+        "front": "bernoulli",
+        "time": 41,
+        "curl": 0
+      }
+    },
+    {
+      "t": 43,
+      "points": [
+        {
+          "expected": {
+            "x": 906.9678218771558,
+            "y": 691.9886093668163,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            907.0239923224568,
+            692.0047984644914
+          ],
+          "error": 0.05845687135704796
+        },
+        {
+          "expected": {
+            "x": 1210.5720516505075,
+            "y": 786.9617188613527,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1210.5871459694988,
+            787.0838779956428
+          ],
+          "error": 0.12308814953647362
+        }
+      ],
+      "state": {
+        "under": "bernoulli",
+        "front": "bernoulli",
+        "time": 41,
+        "curl": 0
+      }
+    },
+    {
+      "t": 43.9,
+      "points": [
+        {
+          "expected": {
+            "x": 1087.2091665452024,
+            "y": 854.1614940485472,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1087.1909090909091,
+            854.0818181818182
+          ],
+          "error": 0.08174092228670352
+        },
+        {
+          "expected": {
+            "x": 1229.1849220631345,
+            "y": 866.7301323396357,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1229.1346153846155,
+            866.7692307692307
+          ],
+          "error": 0.06371380619941631
+        }
+      ],
+      "state": {
+        "under": "bernoulli",
+        "front": "bernoulli",
+        "time": 41,
+        "curl": 0
+      }
+    },
+    {
+      "t": 44,
+      "points": [
+        {
+          "expected": {
+            "x": 1089.3853846348852,
+            "y": 855.9715193954132,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1089.066037735849,
+            856.0283018867924
+          ],
+          "error": 0.3243558127292584
+        },
+        {
+          "expected": {
+            "x": 1229.1694709150413,
+            "y": 867.5238976324549,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1229.26,
+            867.52
+          ],
+          "error": 0.09061295030077829
+        }
+      ],
+      "state": {
+        "under": "bernoulli",
+        "front": "bernoulli",
+        "time": 41,
+        "curl": 0
+      }
+    },
+    {
+      "t": 44.5,
+      "points": [
+        {
+          "expected": {
+            "x": 1088.3425464641414,
+            "y": 853.3442217194282,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1088.4019607843138,
+            853.2647058823529
+          ],
+          "error": 0.09926142144527797
+        },
+        {
+          "expected": {
+            "x": 1226.999989660449,
+            "y": 864.8034891640391,
+            "z": 0,
+            "normal": 1
+          },
+          "found": true,
+          "centroid": [
+            1226.9782608695652,
+            864.9347826086956
+          ],
+          "error": 0.13307933334312463
+        }
+      ],
+      "state": {
+        "under": "bernoulli",
+        "front": "bernoulli",
+        "time": 41,
+        "curl": 0
+      }
+    }
+  ],
+  "occlusion": {
+    "pixel": [
+      28,
+      42,
+      42,
+      255
+    ],
+    "ok": true
+  },
+  "maskChecks": [
+    {
+      "t": 24,
+      "pixel": [
+        181,
+        53,
+        53,
+        255
+      ],
+      "green": false
+    },
+    {
+      "t": 24.0333333,
+      "pixel": [
+        181,
+        53,
+        53,
+        255
+      ],
+      "green": false
+    },
+    {
+      "t": 24.2,
+      "pixel": [
+        181,
+        53,
+        53,
+        255
+      ],
+      "green": false
+    },
+    {
+      "t": 25.5,
+      "pixel": [
+        181,
+        53,
+        53,
+        255
+      ],
+      "green": false
+    },
+    {
+      "t": 27,
+      "pixel": [
+        39,
+        148,
+        79,
+        255
+      ],
+      "green": true
+    },
+    {
+      "t": 28.5,
+      "pixel": [
+        39,
+        148,
+        79,
+        255
+      ],
+      "green": true
+    }
+  ],
+  "seams": [
+    {
+      "t": 4.7,
+      "meanDifference": 0.011188982183700435,
+      "largeChangeFraction": 0.000007335680751173709
+    },
+    {
+      "t": 6.9,
+      "meanDifference": 0.19741501895991326,
+      "largeChangeFraction": 0.0016866422896352473
+    },
+    {
+      "t": 10,
+      "meanDifference": 0.4288264039365513,
+      "largeChangeFraction": 0.00012132087396171903
+    },
+    {
+      "t": 14,
+      "meanDifference": 0.005803652040448084,
+      "largeChangeFraction": 0
+    },
+    {
+      "t": 24,
+      "meanDifference": 0.19224562116293156,
+      "largeChangeFraction": 0
+    },
+    {
+      "t": 28.5,
+      "meanDifference": 0,
+      "largeChangeFraction": 0
+    },
+    {
+      "t": 29,
+      "meanDifference": 0,
+      "largeChangeFraction": 0
+    },
+    {
+      "t": 41,
+      "meanDifference": 0.005815125797520473,
+      "largeChangeFraction": 0
+    },
+    {
+      "t": 44,
+      "meanDifference": 0.4389564147709413,
+      "largeChangeFraction": 0.00012301372336583603
+    }
+  ],
+  "failures": [],
+  "maxAnchorError": 0.5337221650645648
+}

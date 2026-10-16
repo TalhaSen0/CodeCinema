@@ -1,86 +1,63 @@
-import {use,ctx,rect,path,line,ellipse,grad,glow,text,paper,textBoxes,resetTextBoxes} from '../../engine/paint.mjs';
-import {clamp,mix,ease,smooth} from '../../engine/math.mjs';
+import {use,ctx,rect,line,grad,text,textBoxes,resetTextBoxes} from '../../engine/paint.mjs';
+import {clamp,ease} from '../../engine/math.mjs';
+import {roomBase,roomForeground} from './room.mjs';
+import {pageSurface,leftSurface,pageView,pageStateAt,bookCamera} from './pages.mjs';
+import {pageTexture,setPageDiagnostic} from './page-content.mjs';
 import {makeTracks} from '../../engine/physics.mjs';
-import {room} from './room.mjs';
 import {getSprites} from './character.mjs';
-import {DURATION,narration,shots,events} from './production.mjs';
-import {warp} from '../../engine/warp.mjs';
+import {DURATION,CLIPS,narration,shots,events} from './production.mjs';
+import {drawMesh,regularMesh,project} from '../../engine/warp.mjs';
 const c=document.querySelector('canvas'),q=new URLSearchParams(location.search),scale=(window.FILM_SCALE||1)*Number(q.get('ss')||1);
 c.width=1920*scale;c.height=1080*scale;use(c.getContext('2d',{alpha:false}));
-const parchment=paper(),tracks=makeTracks(),duration=window.COMPARE?10:DURATION;
-const colors=['#6b6b61','#9c5134','#2b6a66'];
-const symbol=['I','II','III'];
+const duration=window.COMPARE?10:DURATION;
 function label(s,x,y,size=30,col='#dfc89f',align='left'){text(s,x,y,size,col,align)}
-function heading(kicker,title,sub){label(kicker,147,183,20,'#8a5e38');line([[147,204],[350,204]],'#9a7448',1);label(title,145,277,54,'#403125');if(sub)label(sub,148,326,23,'#7e6141')}
-function diagram(t,cycloid=false){
- ctx.drawImage(parchment,0,0);rect(0,0,1920,1080,glow(820,510,1100,'#fff0c325'));
- // Engraved ruled border; scientific folio, rather than a slide deck.
- ctx.strokeStyle='#785b3844';ctx.lineWidth=1;ctx.strokeRect(95,116,1730,838);ctx.strokeRect(102,123,1716,824);
- heading(cycloid?'ACTA ERUDITORUM · 1697':'İKİ YENİ BİLİM · 1638',cycloid?'Zamanın çizdiği eğri':'En kısa yol. En kısa süre?',cycloid?'Bir çemberin üzerindeki nokta, sikloidi çizer.':'Aynı başlangıç. Aynı varış. Farklı zamanlar.');
- const ox=410,oy=355,sx=140,sy=140;
- const map=p=>[ox+p[0]*sx,oy+p[1]*sy];
- // Equal pixel scales keep the circular arc circular and preserve the cycloid's geometry.
- ctx.save();ctx.setLineDash([4,9]);line([[ox,oy],[ox,oy+3*sy],[ox+6*sx,oy+3*sy]],'#94714666',1.5);ctx.restore();
- label('3 m',ox-28,oy+1.5*sy,20,'#8b704d','right');label('6 m',ox+3*sx,oy+3*sy+36,20,'#8b704d','center');
- const count=cycloid?3:2;
- for(let j=0;j<count;j++){
-  const track=tracks.curves[j],draw=cycloid?ease(t,29+j*.18,31.8+j*.18):ease(t,14+j*.7,16+j*.7),pts=[];
-  for(let i=0;i<=260*draw;i++)pts.push(map(track.point(i/260)));
-  if(pts.length)line(pts,colors[j],j===2?5:3);
- }
- for(const [s,p] of [['A',[0,0]],['B',[6,3]]]){const [x,y]=map(p);ellipse(x,y,7,7,'#3b3328');label(s,s==='A'?x-30:x-10,s==='A'?y+16:y-24,31,'#413326')}
- const release=cycloid?34:17.5,elapsed=Math.max(0,(t-release)*.62);
- for(let j=0;j<count;j++){
-  const track=tracks.curves[j];if(t<release)continue;const [x,y]=map(track.at(elapsed));
-  // Tails are historical positions; no accumulated particle state and no rotation implying rolling.
-  for(let k=9;k>0;k--){const [tx,ty]=map(track.at(Math.max(0,elapsed-k*.026)));ellipse(tx,ty,7,7,colors[j]+Math.round(35*(1-k/10)).toString(16).padStart(2,'0'))}
-  ellipse(x+4,y+8,12,5,'#322b2133');ellipse(x,y,11,11,colors[j],'#ead5a0',2);ellipse(x-3,y-4,3,3,'#eee1b7');
- }
- // Legend and calculated times share the simulation's data, not authored fake numbers.
- for(let j=0;j<count;j++){const x=240+j*520;line([[x,915],[x+40,915]],colors[j],4);label(symbol[j]+'  '+tracks.curves[j].name,x+55,922,25,colors[j]);if(t>release+tracks.curves[j].duration/.62)label(tracks.curves[j].duration.toFixed(3)+' s',x+290,922,24,colors[j])}
- label('Durgun başlangıç · g = 9,81 m/s² · Sürtünmesiz kayma · Hareket 0,62×',960,961,19,'#7c6241','center');
- // An engraved chronometer supplies a visible time reference beside the trajectories.
- const clock=Math.min(elapsed,tracks.curves[0].duration),cx=1570,cy=560;
- ellipse(cx,cy,112,112,null,'#947245',2);ellipse(cx,cy,102,102,null,'#94724577',1);
- for(let i=0;i<40;i++){const a=i/40*Math.PI*2,r=i%5?96:90;line([[cx+Math.sin(a)*r,cy-Math.cos(a)*r],[cx+Math.sin(a)*102,cy-Math.cos(a)*102]],'#896941',i%5?1:2)}
- const angle=clock/2*Math.PI*2;line([[cx,cy],[cx+Math.sin(angle)*77,cy-Math.cos(angle)*77]],'#755237',3);ellipse(cx,cy,5,5,'#755237');
- label(clock.toFixed(2)+' s',cx,cy+158,32,'#6a5035','center');label('LE TEMPS',cx,cy-141,17,'#8b6a43','center');
- if(cycloid&&t<34){
-  // Real rolling circle construction, inset. This circle is a construction tool, not the sliding mass.
-  const th=tracks.theta*ease(t,29,33.3),a=tracks.a*44,cx=1100+a*th,cy=223-a;
-  ctx.save();ctx.globalAlpha=.65;line([[1070,223],[1670,223]],'#8a704b',1);const trace=[];for(let i=0;i<=100;i++){const u=th*i/100;trace.push([1100+a*(u-Math.sin(u)),223-a*(1-Math.cos(u))])}line(trace,'#2b6a66',2);ellipse(cx,cy,a,a,null,'#987c4d',2);line([[cx,cy],[cx-a*Math.sin(th),cy+a*Math.cos(th)]],'#95653e',2);ellipse(cx-a*Math.sin(th),cy+a*Math.cos(th),5,5,'#2b6a66');ctx.restore();
- }
- if(cycloid&&t>38){ctx.save();ctx.globalAlpha=ease(t,38,39);rect(147,300,1000,40,'#d7ba83');label('Başta kazanılan hız, uzun yolu telafi eder.',148,326,23,'#7e6141');ctx.restore()}
+const worldLayer=document.createElement('canvas'),foregroundLayer=document.createElement('canvas');
+for(const cv of [worldLayer,foregroundLayer]){cv.width=1920;cv.height=1080}
+function cameraAffine(m){ctx.transform(m[0],m[3],m[1],m[4],m[2],m[5])}
+let surfaceTrace=null,lastTime=0;
+function drawSurface(t,view){
+ const state=pageStateAt(t),underTime=state.under==='bernoulli'&&t<29?29:state.time,transform=ctx.getTransform();
+ // Prefilter the same UV texture for the highly oblique, small book surface.
+ // Separate axes avoid shimmering glyphs when a 1080px folio is only ~80px high.
+ const edge=pageSurface.boundary({view}),extent=axis=>Math.max(...edge.map(p=>p[axis]))-Math.min(...edge.map(p=>p[axis])),level=(size,max)=>Math.min(max,2**Math.ceil(Math.log2(Math.max(64,size*1.5))));
+ const tw=level(extent(0),1920),th=level(extent(1)+(state.curl?180:0),1080),texture=(id,time)=>pageTexture(id,time,tw,th);
+ surfaceTrace={surfaceId:pageSurface.id,state,focus:view.focus,anchors:[[410/1920,355/1080],[1250/1920,775/1080],[0,0],[1,0],[1,1],[0,1]].map(([u,v])=>{const p=pageSurface.sample(u,v,{view});return{...p,x:transform.a*p.x+transform.c*p.y+transform.e,y:transform.b*p.x+transform.d*p.y+transform.f}}),drawOrder:['world','page-under',...(state.curl>0||state.front!==state.under?['page-front-back']:[]),'foreground']};
+ const under=texture(state.under,underTime),flat={view,curl:0};
+ if(view.focus<1&&t>=CLIPS.firstTurn[1]){const left={view,curl:0};drawMesh(ctx,leftSurface.mesh(left,24,8),pageTexture('back',0),{shade:false,clip:leftSurface.boundary(left)})}
+ if(view.focus===1&&state.curl===0){ctx.drawImage(pageTexture(state.front,state.time),0,0);return}
+ const boundary=pageSurface.boundary(flat);
+ if(view.focus===1)ctx.drawImage(under,0,0);else drawMesh(ctx,pageSurface.mesh(flat,24,8),under,{shade:false,clip:boundary});
+ if(state.front!==state.under||state.curl>0){const options={view,curl:state.curl};drawMesh(ctx,pageSurface.mesh(options,48,10),texture(state.front,state.time),{back:texture('back',0),shade:true,clip:state.curl===0?boundary:null})}
 }
-function wide(t,closing=false){
- ctx.save();const z=closing?mix(1.12,1.04,ease(t,43,48)):1.02+t*.006;ctx.translate(960,530);ctx.scale(z,z);ctx.translate(-960,-530);room(closing?8+Math.max(0,t-44)*.4:t,window.COMPARE==='hybrid');ctx.restore();
- // Light falloff preserves candle highlights, with a cool outside world.
- rect(0,0,1920,1080,grad(0,0,1000,0,[[0,'#08141be6'],[.52,'#09131b70'],[1,'transparent']]));
- if(!window.COMPARE){ctx.save();ctx.globalAlpha=closing?ease(t,43.5,45):ease(t,.2,2)*(1-ease(t,8,10));
+function screenLighting(focus){if(focus>=1)return;ctx.save();ctx.globalAlpha=1-focus;rect(0,0,1920,1080,grad(0,0,1000,0,[[0,'#08141be6'],[.52,'#09131b70'],[1,'transparent']]));ctx.restore()}
+function titles(t,closing=false){if(window.COMPARE)return;ctx.save();ctx.globalAlpha=closing?ease(t,43.5,45):ease(t,.2,2)*(1-ease(t,8,10));
  label(closing?'CODECINEMA · BİLİMİN İZİNDE':'BİLİMİN İZİNDE / 01',154,270,21,'#bda274');line([[154,294],[390,294]],'#b79b64',1);
  label(closing?'Doğru soru,':'Galileo',148,393,83,'#e4d1ac');label(closing?'yeni bir yol açar.':'ve en hızlı yol',152,466,56,'#d4ba8b');
- label(closing?'1638 → 1697':'Mesafe ile zaman arasında bir hikâye',156,529,24,'#b5a183');if(!closing)label('Çalışma odası: temsili canlandırma',156,578,18,'#a99779');ctx.restore()}
+ label(closing?'1638 → 1697':'Mesafe ile zaman arasında bir hikâye',156,529,24,'#b5a183');if(!closing)label('Çalışma odası: temsili canlandırma',156,578,18,'#a99779');ctx.restore();}
+function wide(t,closing=false){
+ const local=closing?8+Math.max(0,t-44)*.4:t,m=bookCamera(t,closing);
+ ctx.save();cameraAffine(m);roomBase(local,window.COMPARE==='hybrid');drawSurface(t,pageSurface.view());roomForeground(local,window.COMPARE==='hybrid');ctx.restore();screenLighting(0);titles(t,closing);
 }
-const pageTexture=document.createElement('canvas');pageTexture.width=1920;pageTexture.height=1080;
+function layerTexture(canvas,draw){const original=ctx;use(canvas.getContext('2d'));ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,1920,1080);draw();use(original);return canvas}
+function worldMesh(matrix,offset=0){return regularMesh((u,v)=>{const [x,y]=project(matrix,1920*u,1080*v);return{x,y:y+offset}},24,14)}
 function portal(t,reverse=false){
- const p=ease(t,reverse?41:10,reverse?44:14),k=reverse?1-p:p;
- wide(reverse?44:t,reverse);
- const camera=reverse?mix(1.12,1.04,ease(44,43,48)):1.02+t*.006;
- const page=[[1017,818],[1302,813],[1307,861],[1031,887]].map(([x,y])=>[960+(x-960)*camera,530+(y-530)*camera]);
- const full=[[0,0],[1920,0],[1920,1080],[0,1080]],quad=page.map((a,i)=>[mix(a[0],full[i][0],k),mix(a[1],full[i][1],k)]);
- const original=ctx;use(pageTexture.getContext('2d'));ctx.setTransform(1,0,0,1,0,0);diagram(reverse?40:14,reverse);use(original);warp(ctx,pageTexture,quad,7);
+ const view=pageView(t),local=reverse?8+Math.max(0,t-44)*.4:t;
+ rect(0,0,1920,1080,'#101e25');
+ const bg=layerTexture(worldLayer,()=>roomBase(local,window.COMPARE==='hybrid'));
+ drawMesh(ctx,worldMesh(view.camera),bg,{shade:false});
+ drawSurface(t,view);
+ const fg=layerTexture(foregroundLayer,()=>roomForeground(local,window.COMPARE==='hybrid'));
+ // Elevated foreground props leave the reader's sightline as the camera tilts to the paper.
+ const nearestY=Math.min(...[[0,0],[1920,0],[1920,1080],[0,1080]].map(p=>project(view.camera,...p)[1]));
+ const elevation=view.focus**2*Math.max(0,1180-nearestY);
+ drawMesh(ctx,worldMesh(view.camera,elevation),fg,{shade:false});
+ screenLighting(view.focus);if(reverse)titles(t,true);
 }
-function pageTurn(t){
- diagram(t<26?23.9:29,false);
- const p=ease(t,24,28.5),edge=1920*(1-p);
- if(p>.02){ctx.save();ctx.beginPath();ctx.rect(edge,0,1920-edge,1080);ctx.clip();diagram(29,true);ctx.restore();
- path(`M ${edge} 0 Q ${edge-240*Math.sin(p*Math.PI)} 540 ${edge} 1080 L ${edge+130*Math.sin(p*Math.PI)} 1080 Q ${edge+70} 540 ${edge+130*Math.sin(p*Math.PI)} 0 Z`,grad(edge-120,0,edge+150,0,[[0,'#8b704e'],[.5,'#f0ddb0'],[1,'#c1a271']]),'#8f754d',1);
- }
- ctx.save();ctx.globalAlpha=Math.sin(p*Math.PI)**2;label('1696',960,463,142,'#43372a','center');label('JOHANN BERNOULLI',960,528,26,'#614b31','center');label('Bir soru, Avrupa’nın matematikçilerine ulaşır.',960,589,27,'#725638','center');ctx.restore();
-}
+function diagram(t,cycloid=false){drawSurface(t,pageView(t))}
+function pageTurn(t){drawSurface(t,pageView(t))}
 function subtitles(t){const n=narration.find(n=>t>=n.start&&t<n.end);if(!n)return;const words=n.text.split(' '),lines=[];let s='';ctx.font='25px Georgia';for(const word of words){if(ctx.measureText(s+' '+word).width>1510){lines.push(s);s=word}else s+=(s?' ':'')+word}if(s)lines.push(s);const y=lines.length>1?1021:1040;lines.forEach((s,i)=>label(s,960,y+i*34,25,'#ecdfc2','center'))}
-function seek(time){resetTextBoxes();const t=clamp(Number(time)||0,0,duration);ctx.setTransform(scale,0,0,scale,0,0);ctx.globalAlpha=1;ctx.globalCompositeOperation='source-over';ctx.clearRect(0,0,1920,1080);
- if(window.COMPARE||t<10)wide(t);else if(t<14)portal(t);else if(t<24)diagram(t);else if(t<29)pageTurn(t);else if(t<41)diagram(t,true);else if(t<44)portal(t,true);else wide(t,true);
+function seek(time){resetTextBoxes();const t=clamp(Number(time)||0,0,duration);lastTime=t;ctx.setTransform(scale,0,0,scale,0,0);ctx.globalAlpha=1;ctx.globalCompositeOperation='source-over';ctx.clearRect(0,0,1920,1080);
+ if(window.COMPARE||t<CLIPS.entry[0])wide(t);else if(t<CLIPS.entry[1])portal(t);else if(t<CLIPS.chapterTurn[0])diagram(t);else if(t<29)pageTurn(t);else if(t<CLIPS.exit[0])diagram(t,true);else if(t<CLIPS.exit[1])portal(t,true);else wide(t,true);
  // Cinemascope composition with subtitles in the lower picture area.
  rect(0,0,1920,65,'#0c1419');rect(0,988,1920,92,'#0c1419');
  label('C O D E C I N E M A',153,42,17,'#967e59');label(window.COMPARE?'ÇALIŞMA ODASI · '+window.COMPARE.toUpperCase():'GALILEO / EN HIZLI YOL',1767,42,15,'#967e59','right');
@@ -88,7 +65,7 @@ function seek(time){resetTextBoxes();const t=clamp(Number(time)||0,0,duration);c
  const range=document.getElementById('scrub');if(range)range.value=t;const counter=document.getElementById('time');if(counter)counter.textContent=t.toFixed(1)+' / '+duration;
 }
 await document.fonts.ready;
-window.__film={duration,ready:true,seek,shots,events,textBoxes,tracks:tracks.curves.map(c=>({id:c.id,duration:c.duration})),sprites:()=>Object.fromEntries(Object.entries(getSprites()).map(([k,c])=>[k,c.toDataURL()]))};
+window.__film={duration,ready:true,seek,shots,events,textBoxes,debug:()=>({t:lastTime,surface:surfaceTrace}),setDiagnostic:setPageDiagnostic,tracks:makeTracks().curves.map(c=>({id:c.id,duration:c.duration})),sprites:()=>Object.fromEntries(Object.entries(getSprites()).map(([k,c])=>[k,c.toDataURL()]))};
 seek(Number(q.get('t')||0));
 if(q.has('capture'))document.body.classList.add('capture');
 let playing=false,origin=0,at=0;const audio=new Audio('./assets/mix.wav');

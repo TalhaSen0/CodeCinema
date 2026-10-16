@@ -4,6 +4,8 @@ Fikirden kodla çizilmiş 2D kısa filme uzanan, Codex oturumunda yönetilen yer
 
 ## İzle ve incele
 
+16 Ekim geçiş revizyonu tamamlandı. Yeni final: `renders/galileo-final-v2.mp4` (`galileo-final.mp4` ile aynı). Eski sürüm: `renders/galileo-before-pages.mp4`. Yan yana karşılaştırma: `renders/galileo-before-after.mp4`. Uygulama ve gerçek test kanıtları: `docs/page-surface-implementation.md`, `review/revision/`. Önceki `review/quality-report.md` baseline üretim tarihçesidir.
+
 - `renders/galileo-final.mp4`: 1920×1080, 30 FPS, H.264/AAC final.
 - `renders/galileo-draft.mp4`: 960×540 taslak.
 - `renders/galileo-music-only.mp4`: aynı 1080p görüntü, özgün müzik/efekt ve altyazı; Piper anlatımı içermez.
@@ -29,6 +31,8 @@ npm run dev
 npm run compare
 npm run render:draft
 npm run review:frames
+npm run review:transitions
+npm run verify:surfaces
 npm run render:final
 npm run verify
 ```
@@ -54,3 +58,5 @@ Sonra Codex'e **“films/my-film içindeki brief'ten filmi üret”** demek yete
 Chatterbox Multilingual ve ACE-Step araştırıldı, bu teslimde kurulup çalıştırılmadı. Hibrit test bağımsız bir üretken görüntü modeli değildir: aynı özgün çizimlerin otomatik resim katmanlarına dönüştürülmesidir. Görsel kalite iyi bir prosedürel illüstrasyon düzeyindedir; profesyonel stüdyo animasyonu ve doğal insan seslendirmesi seviyesinde olduğuna dair bir iddia yok.
 
 Mimari: `docs/architecture-decision.md`. İş akışı: `docs/production-pipeline.md`. Kaynak incelemesi: `docs/source-audit.md`. Bilimsel dayanak: `production/research/galileo.md`.
+
+Geçiş revizyonu araçları: `node tools/render-transition-tests.mjs`, `python tools/verify-transition-clips.py`, `node tools/capture-baseline.mjs`, `python tools/verify-style.py`, `python tools/review-encoded.py renders/galileo-final-v2.mp4 review/revision/encoded`. Yoğun görsel denetim ve yerel geçiş kontrolleri tam renderdan önce yapılmalıdır.

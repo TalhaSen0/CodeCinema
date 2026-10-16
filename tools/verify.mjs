@@ -37,5 +37,5 @@ check('narration fit',audio.cues.every(c=>c.actualEnd<=c.end&&c.actualEnd<=DURAT
 check('shared audio events',JSON.stringify(audio.events)===JSON.stringify(events),events);
 const pcm=execFileSync(env.FFMPEG,['-v','error','-i',video,'-vn','-ac','2','-f','f32le','-'],{maxBuffer:64*1024*1024});let peak=0;for(let i=0;i<pcm.length;i+=4)peak=Math.max(peak,Math.abs(pcm.readFloatLE(i)));check('audio clipping',peak<1,{decodedStereoPeak:peak});
 const m=makeTracks();check('scientific time order',m.curves[2].duration<m.curves[1].duration&&m.curves[1].duration<m.curves[0].duration,m.curves.map(c=>({id:c.id,time:c.duration})));
-writeFileSync('review/verification.json',JSON.stringify({video,checks,hashes,failures,probe},null,2));
+writeFileSync(process.argv[3]||'review/verification.json',JSON.stringify({video,checks,hashes,failures,probe},null,2));
 if(failures.length)process.exitCode=1;

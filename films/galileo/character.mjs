@@ -1,6 +1,6 @@
 import {ctx,path,ellipse,line,grad,hatch,text,layer} from '../../engine/paint.mjs';
 import {ik,smooth,ease,mix} from '../../engine/math.mjs';
-import {wristWorld} from './motion.mjs';
+import {characterPose} from './motion.mjs';
 export function torso(){
  const p=path('M -93 -105 C -145 -101 -186 -52 -193 28 L -215 188 Q -121 242 55 211 L 131 171 L 86 -18 Q 75 -94 23 -105 Z',grad(-170,-80,100,210,[[0,'#473c35'],[.42,'#5a4838'],[1,'#1b1b1c']]),'#17191b',4);
  hatch(p,-230,-130,390,380,9,'#bd9d6327');
@@ -36,22 +36,23 @@ export function head(){
 let sprites;
 export function getSprites(){if(!sprites)sprites={head:layer(()=>{ctx.translate(250,270);head()},500,380),torso:layer(()=>{ctx.translate(250,150);torso()},500,420)};return sprites}
 export function hand(x,y,rot=0){ctx.save();ctx.translate(x,y);ctx.rotate(rot);path('M -19 -10 Q -21 -20 -10 -22 L 12 -19 Q 32 -15 34 -9 Q 33 -4 20 -7 L 9 -9 Q 39 0 34 7 Q 29 11 8 5 Q 30 14 22 19 L 1 12 Q -11 12 -19 4 Z',grad(-12,-20,20,16,[[0,'#e0b981'],[1,'#8d5b3e']]),'#66432c',1.8);path('M -12 -10 Q -2 -3 9 -3 M -10 -4 Q -3 4 6 5',null,'#9e7049',1);ctx.restore()}
-function sleeve(a,e,b){line([a,e,b],'#17191a',65);line([a,e,b],grad(a[0],a[1],b[0],b[1],[[0,'#62503c'],[1,'#3a302a']]),58);line([[e[0]-10,e[1]-19],[e[0]+13,e[1]+15]],'#99805a55',2);ellipse(b[0],b[1],27,18,'#c0ac85','#42372b',3)}
+function sleeve(a,e,b){
+ const fill=grad(a[0],a[1],b[0],b[1],[[0,'#62503c'],[1,'#3a302a']]);
+ const segment=(p,q,wa,wb)=>{const dx=q[0]-p[0],dy=q[1]-p[1],d=Math.hypot(dx,dy),nx=-dy/d,ny=dx/d,ax=dx/d,ay=dy/d;path(`M ${p[0]+nx*wa} ${p[1]+ny*wa} Q ${(p[0]+q[0])/2+nx*wa} ${(p[1]+q[1])/2+ny*wa} ${q[0]+nx*wb} ${q[1]+ny*wb} Q ${q[0]+ax*wb} ${q[1]+ay*wb} ${q[0]-nx*wb} ${q[1]-ny*wb} L ${p[0]-nx*wa} ${p[1]-ny*wa} Q ${p[0]-ax*wa*.4} ${p[1]-ay*wa*.4} ${p[0]+nx*wa} ${p[1]+ny*wa} Z`,fill,'#25211e',2.4)};
+ ellipse(a[0],a[1],33,34,fill,'#25211e',2.4);segment(a,e,32,27);ellipse(e[0],e[1],27,27,fill);segment(e,b,26,19);line([[e[0]-10,e[1]-10],[e[0]+9,e[1]+9]],'#99805a55',2);ellipse(b[0],b[1],22,14,'#c0ac85','#42372b',2);
+}
 export function rig(t,hybrid=false){
- const breath=Math.sin(t*1.4)*2,lean=Math.sin(t*.5)*.016;
- ctx.save();ctx.translate(1080,620+breath);ctx.rotate(lean);
+ const pose=characterPose(t),{lean,turn,left,right}=pose;
+ ctx.save();ctx.translate(...pose.origin);ctx.rotate(lean);
  if(hybrid){const s=getSprites();ctx.drawImage(s.torso,-250,-150)}else torso();
- const shoulder=[-124,-53],s2=[54,-52];
- const turn=ease(t,4,5.7)*(1-ease(t,7,8.6));
- const h=[mix(-118,-145,turn),mix(175,153,turn)],world=wristWorld(t),dx=world[0]-1080,dy=world[1]-620-breath;
- const h2=[dx*Math.cos(lean)+dy*Math.sin(lean),-dx*Math.sin(lean)+dy*Math.cos(lean)];
- sleeve(shoulder,ik(shoulder,h,130,125,-1),h);sleeve(s2,ik(s2,h2,155,155,1),h2);
+ sleeve(left.shoulder,left.elbow,left.wrist);sleeve(right.shoulder,right.elbow,right.wrist);
  ctx.save();ctx.translate(0,-3);ctx.rotate(-.09+Math.sin(t*.55)*.025-turn*.035);
  if(hybrid){const s=getSprites();ctx.drawImage(s.head,-250,-270)}else head();
  // Closed eyelids use exactly the same head transform.
  if((t%5.3)<.12){line([[-59,-174],[-28,-174]],'#bba078',7);line([[-3,-175],[20,-175]],'#bba078',7)}
- ctx.restore();hand(...h,-.28-turn*.45);hand(...h2,.12);
- // Quill rigidly follows the wrist, with a small delayed tip deflection.
- {ctx.save();ctx.translate(...h);ctx.rotate(.25);line([[3,8],[56,-115]],'#c5ad7e',2);path('M 56 -115 Q 46 -167 79 -202 Q 86 -157 56 -115 Z','#c9bd9c','#594e37',1.5);for(let i=0;i<12;i++)line([[56+i*1.8,-127-i*5],[65+i*1.8,-132-i*5]],'#8f8165',1);ctx.restore()}
+ ctx.restore();
  ctx.restore();
 }
+export function drawHands(t){const pose=characterPose(t),{left,right}=pose;ctx.save();ctx.translate(...pose.origin);ctx.rotate(pose.lean);hand(...left.wrist,left.rotation);hand(...right.wrist,right.rotation);
+ // Hand and pen share the same wrist transform and calibrated grip angle.
+ ctx.save();ctx.translate(...left.wrist);ctx.rotate(left.rotation);ctx.rotate(-.45);line([[3,8],[56,-115]],'#c5ad7e',2);path('M 56 -115 Q 46 -167 79 -202 Q 86 -157 56 -115 Z','#c9bd9c','#594e37',1.5);for(let i=0;i<12;i++)line([[56+i*1.8,-127-i*5],[65+i*1.8,-132-i*5]],'#8f8165',1);ctx.restore();ctx.restore();}
