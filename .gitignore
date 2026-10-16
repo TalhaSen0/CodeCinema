@@ -5,3 +5,9 @@ assets/models/
 renders/frames/
 vendor/**/.git/
 *.log
+
+# Generated renders/review intermediates stay local; selected committed evidence remains tracked.
+/renders/
+/review/
+# Only explicitly committed, audited vendor sources are distributed.
+/vendor/
