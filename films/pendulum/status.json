@@ -1,0 +1,18 @@
+{
+  "id": "pendulum",
+  "stage": "brief-ready",
+  "creativeRuntime": "Codex session",
+  "brief": "C:\\Users\\TalhaSen\\OneDrive\\Belgeler\\My Apps\\CodeCinema\\briefs\\pendulum.md",
+  "required": [
+    "research",
+    "script",
+    "art-direction",
+    "storyboard",
+    "scenes",
+    "audio",
+    "draft",
+    "review",
+    "revision",
+    "final"
+  ]
+}

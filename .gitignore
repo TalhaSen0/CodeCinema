@@ -1,0 +1,7 @@
+node_modules/
+.tools/
+.venv/
+assets/models/
+renders/frames/
+vendor/**/.git/
+*.log

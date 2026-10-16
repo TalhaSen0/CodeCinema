@@ -1,0 +1,15 @@
+{
+  "name": "codecinema", "version": "0.1.0", "private": true, "type": "module",
+  "scripts": {
+    "dev": "node tools/dev.mjs",
+    "setup": "node tools/setup.mjs",
+    "compare": "node tools/compare.mjs",
+    "audio": "python tools/audio.py",
+    "render:draft": "node tools/render.mjs draft",
+    "render:final": "node tools/render.mjs final",
+    "review:frames": "node tools/capture.mjs",
+    "verify": "node --test tests/*.test.mjs && node tools/verify.mjs",
+    "new": "node tools/new-film.mjs"
+  },
+  "dependencies": {"playwright": "1.56.1", "ffprobe-static": "3.1.0"}
+}

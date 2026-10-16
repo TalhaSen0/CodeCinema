@@ -1,0 +1,86 @@
+{
+  "sampleRate": 48000,
+  "duration": 48,
+  "peak": 0.896306119855796,
+  "cues": [
+    {
+      "start": 0.8,
+      "end": 7.9,
+      "text": "Bin altı yüz otuz sekiz. Galileo’nun hareket üzerine çalışmaları yayımlanır. En kısa yol, en hızlı yol mudur?",
+      "actualEnd": 7.755979166666666,
+      "sourceSeconds": 7.325895691609977,
+      "speed": 1.0540857110230184
+    },
+    {
+      "start": 9,
+      "end": 14.2,
+      "text": "Aynı iki nokta arasında, düz bir rampa en kısa mesafeyi sunar.",
+      "actualEnd": 13.129666666666667,
+      "sourceSeconds": 4.133151927437642,
+      "speed": 1
+    },
+    {
+      "start": 15,
+      "end": 22.8,
+      "text": "Ama daha dik başlayan bir eğri, cismi önce hızlandırır. Galileo dairesel yayları incelemişti.",
+      "actualEnd": 20.987395833333334,
+      "sourceSeconds": 5.990748299319728,
+      "speed": 1
+    },
+    {
+      "start": 24.8,
+      "end": 32.7,
+      "text": "Bin altı yüz doksan altıda Johann Bernoulli soruyu yeniden ortaya koydu. Ertesi yıl, çözümler yayımlandı.",
+      "actualEnd": 31.525458333333333,
+      "sourceSeconds": 6.733786848072563,
+      "speed": 1
+    },
+    {
+      "start": 33.2,
+      "end": 40.9,
+      "text": "İdeal koşullarda en hızlı iniş yolu, bir sikloiddir. Başta kazanılan hız, uzun yolu telafi eder.",
+      "actualEnd": 39.95370833333334,
+      "sourceSeconds": 6.757006802721088,
+      "speed": 1
+    },
+    {
+      "start": 42.2,
+      "end": 47.2,
+      "text": "Bilim bazen mesafeyi değil, doğru soruyu kısaltır.",
+      "actualEnd": 45.52133333333334,
+      "sourceSeconds": 3.332063492063492,
+      "speed": 1
+    }
+  ],
+  "events": [
+    {
+      "t": 4.7,
+      "type": "page"
+    },
+    {
+      "t": 10,
+      "type": "reveal"
+    },
+    {
+      "t": 17.5,
+      "type": "release"
+    },
+    {
+      "t": 24.5,
+      "type": "page"
+    },
+    {
+      "t": 29,
+      "type": "reveal"
+    },
+    {
+      "t": 34,
+      "type": "release"
+    },
+    {
+      "t": 41,
+      "type": "page"
+    }
+  ],
+  "voice": "Piper tr_TR-dfki-medium; CC BY-NC-SA dataset; noncommercial delivery"
+}
