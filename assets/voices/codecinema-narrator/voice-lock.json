@@ -1,0 +1,47 @@
+{
+  "id": "codecinema-narrator",
+  "status": "user-approved-voice",
+  "language": "tr",
+  "voiceId": "d1-02552",
+  "description": "Tok, sıcak erkek anlatıcı",
+  "approvedOn": "2026-10-16",
+  "userFeedback": "ses çok iyi bunu kilitleyelim.",
+  "reference": {
+    "path": "assets/voices/codecinema-narrator/reference.flac",
+    "sha256": "376e64a39a1cfcc98b20043669e8f8eb3e84cd1cf91e4011b5260c47097ab359",
+    "source": "https://huggingface.co/datasets/cloud0day3/alania-synthetic-speech-tr",
+    "revision": "277dfc8a2322014099ff72688bcaee12480c4605",
+    "license": "CC-BY-4.0"
+  },
+  "approvedSample": {
+    "path": "assets/voices/codecinema-narrator/approved-sample.wav",
+    "sha256": "aa1ce04ea8ee51b90103b1262f6c4a33a9c80cf5c7ec2893acb8b0a02a89712b"
+  },
+  "generation": {
+    "model": "Chatterbox Multilingual",
+    "modelLicense": "MIT",
+    "loadedModelRevision": null,
+    "execution": "official hosted demo",
+    "seed": 9,
+    "exaggeration": 0.5,
+    "temperature": 0.8,
+    "cfg": 0.5
+  },
+  "processing": {
+    "gainDB": -6,
+    "filter": "afftdn=nr=4:nf=-50:tn=0:gs=6",
+    "paddingSeconds": 0.1,
+    "fadeSeconds": 0.01,
+    "alignmentUncertaintySeconds": 0.1,
+    "pitchShift": false,
+    "timeStretch": false
+  },
+  "attributionFile": "assets/voices/codecinema-narrator/ATTRIBUTION.txt",
+  "rules": [
+    "Do not switch reference voice without user request.",
+    "Preserve approved sample; new generation is compared against it.",
+    "Same reference and seed do not guarantee identical output across models or services.",
+    "No automatic Piper/Freya fallback."
+  ],
+  "fullFilmProduced": false
+}

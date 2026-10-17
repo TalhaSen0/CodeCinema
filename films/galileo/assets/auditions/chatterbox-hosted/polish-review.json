@@ -1,0 +1,37 @@
+{
+  "source": "listening-reel-headroom.wav",
+  "filter": "afftdn=nr=4:nf=-50:tn=0:gs=6",
+  "rmsMatchGain": 1.0018376656209995,
+  "sampleRate": 24000,
+  "duration": 13.08,
+  "timeStretch": false,
+  "subjectiveQuality": "awaiting listening comparison",
+  "commercialReleaseApproved": false,
+  "watermark": "No targeted removal; survival after filtering not measured.",
+  "files": [
+    {
+      "file": "listening-reel-headroom.wav",
+      "seconds": 13.08,
+      "peak": 0.501190185546875,
+      "rms": 0.0592749139276366,
+      "fullScaleSamples": 0,
+      "sha256": "7980cdae7e063443b0e29851e451e823119981e179d25edce64f8d2ba49aacb5"
+    },
+    {
+      "file": "listening-reel-polished.wav",
+      "seconds": 13.08,
+      "peak": 0.501800537109375,
+      "rms": 0.05927494324678267,
+      "fullScaleSamples": 0,
+      "sha256": "e2f31ff7e13d5728fdfa29c768ade1f30a0845d7c7ed9d2b8f1b784e600e3930"
+    },
+    {
+      "file": "comparison-original-then-polished.wav",
+      "seconds": 27.16,
+      "peak": 0.501800537109375,
+      "rms": 0.05817347757672997,
+      "fullScaleSamples": 0,
+      "sha256": "b26884af5d3238907aa2f745a2ce776f3a91add9a2ab24046381ea201e0c5d68"
+    }
+  ]
+}

@@ -11,3 +11,5 @@ vendor/**/.git/
 /review/
 # Only explicitly committed, audited vendor sources are distributed.
 /vendor/
+__pycache__/
+*.pyc

@@ -1,0 +1,37 @@
+[
+  {
+    "file": "listening-reel.wav",
+    "sampleRate": 24000,
+    "duration": 13.08,
+    "finite": true,
+    "peak": 0.999969482421875,
+    "rms": 0.11826899675166533,
+    "fullScaleSamples": 2
+  },
+  {
+    "file": "voice-1.wav",
+    "sampleRate": 24000,
+    "duration": 5.16,
+    "finite": true,
+    "peak": 0.999969482421875,
+    "rms": 0.116709091054149,
+    "fullScaleSamples": 1
+  },
+  {
+    "file": "voice-4.wav",
+    "sampleRate": 24000,
+    "duration": 6.92,
+    "finite": true,
+    "peak": 0.999969482421875,
+    "rms": 0.12760171368964954,
+    "fullScaleSamples": 1
+  },
+  {
+    "file": "listening-reel-headroom.wav",
+    "sampleRate": 24000,
+    "duration": 13.08,
+    "finite": true,
+    "peak": 0.501190185546875,
+    "fullScaleSamples": 0
+  }
+]

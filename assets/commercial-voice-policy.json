@@ -1,0 +1,29 @@
+{
+  "provider": "freya-small",
+  "language": "tr",
+  "code": {
+    "url": "https://github.com/freyavoiceai/FreyaTTS",
+    "revision": "146d36c1cb6660646be57d31339db4eed9315de3",
+    "license": "Apache-2.0"
+  },
+  "model": {
+    "repo": "freyavoice/Freya-TTS",
+    "revision": "d124e07493615208f58bdd21d432736849ee4230",
+    "license": "Apache-2.0",
+    "files": ["config.json", "model.safetensors", "README.md"]
+  },
+  "decoder": {
+    "repo": "openbmb/VoxCPM2",
+    "revision": "32279effe8c19989596f05d353d1447f51d9e915",
+    "license": "Apache-2.0",
+    "files": ["audiovae.pth", "README.md"]
+  },
+  "seed": 9,
+  "steps": 32,
+  "maxModelDownloadBytes": 2000000000,
+  "reviewedOn": "2026-10-16",
+  "basis": "Publisher licenses permit commercial use; not an independent training-data or personality-rights clearance.",
+  "cloning": false,
+  "fallback": "none; never silently reuse Piper",
+  "releaseStatus": "candidate-requires-listening-review"
+}

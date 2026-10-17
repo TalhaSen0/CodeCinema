@@ -1,0 +1,29 @@
+{
+  "source": "films\\galileo\\assets\\auditions\\chatterbox-hosted\\listening-reel-polished.wav",
+  "intervalSpecification": {
+    "speechIntervals": [
+      [
+        0.11725,
+        4.145083
+      ],
+      [
+        6.16,
+        13.08
+      ]
+    ],
+    "paddingSeconds": 0.1,
+    "fadeSeconds": 0.01,
+    "basis": "Provisional first-cue endpoint from waveform/spectrogram and silencedetect; second cue preserved in full. No forced alignment or word recognition performed.",
+    "review": "User reports an unwanted breath-like sound between cues. First cue tail contains activity around 4.47-4.99s. Listening confirmation still needed."
+  },
+  "duration": 13.08,
+  "sampleRate": 24000,
+  "unchangedFullGainSamples": 269948,
+  "zeroGainSamples": 43254,
+  "peak": 0.501800537109375,
+  "sourceSHA256": "e2f31ff7e13d5728fdfa29c768ade1f30a0845d7c7ed9d2b8f1b784e600e3930",
+  "outputSHA256": "f4ecc496f3fc8ff5ad40db2990407bdc087fe6886b9a43a31146f6cf4ee30c94",
+  "subjectiveResult": "User accepted: no distortion, clean silence between cues.",
+  "commercialReleaseApproved": false,
+  "humanAccepted": true
+}

@@ -1,0 +1,10 @@
+# Separate .tools/freya-env; CUDA torch installed from the official cu128 index first.
+torch==2.9.1
+torchaudio==2.9.1
+voxcpm==2.0.3
+numpy
+einops
+soundfile
+librosa
+huggingface_hub
+safetensors

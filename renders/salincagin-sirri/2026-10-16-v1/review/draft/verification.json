@@ -1,0 +1,13 @@
+{
+  "video": "renders\\salincagin-sirri\\2026-10-16-v1\\draft.mp4",
+  "sha256": "f9104048a3519fdaebae191191c22164c91476d569deb89ee999dacb724d7884",
+  "duration": 32.0,
+  "width": 960,
+  "height": 540,
+  "fps": "30/1",
+  "decodedFrames": "960",
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "fullDecode": "passed",
+  "subjectiveAudio": "not listened by agent"
+}

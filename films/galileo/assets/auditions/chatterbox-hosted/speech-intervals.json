@@ -1,0 +1,7 @@
+{
+  "speechIntervals": [[0.11725, 4.145083], [6.16, 13.08]],
+  "paddingSeconds": 0.1,
+  "fadeSeconds": 0.01,
+  "basis": "Provisional first-cue endpoint from waveform/spectrogram and silencedetect; second cue preserved in full. No forced alignment or word recognition performed.",
+  "review": "User reports an unwanted breath-like sound between cues. First cue tail contains activity around 4.47-4.99s. Listening confirmation still needed."
+}

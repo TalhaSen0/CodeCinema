@@ -1,0 +1,417 @@
+{
+  "text": " Aynı iki nokta arasında, düz bir rampa en kısa mesafeyi sunar.",
+  "segments": [
+    {
+      "start": 0.1,
+      "end": 1.66,
+      "text": " Aynı iki nokta arasında,",
+      "seek": null,
+      "tokens": [
+        316,
+        25681,
+        20739,
+        33811,
+        1328,
+        594,
+        33119,
+        11
+      ],
+      "temperature": null,
+      "avg_logprob": null,
+      "compression_ratio": null,
+      "no_speech_prob": null,
+      "words": [
+        {
+          "word": " Aynı",
+          "start": 0.1,
+          "end": 0.48,
+          "probability": 0.41580290952697396,
+          "tokens": [
+            316,
+            25681
+          ]
+        },
+        {
+          "word": " iki",
+          "start": 0.48,
+          "end": 0.82,
+          "probability": 0.3482647240161896,
+          "tokens": [
+            20739
+          ]
+        },
+        {
+          "word": " nokta",
+          "start": 0.82,
+          "end": 1.18,
+          "probability": 0.6291474550962448,
+          "tokens": [
+            33811,
+            1328
+          ]
+        },
+        {
+          "word": " arasında,",
+          "start": 1.18,
+          "end": 1.66,
+          "probability": 0.7000070760647455,
+          "tokens": [
+            594,
+            33119,
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "start": 1.96,
+      "end": 4.22,
+      "text": " düz bir rampa en kısa mesafeyi sunar.",
+      "seek": null,
+      "tokens": [
+        274,
+        4934,
+        1904,
+        12428,
+        64,
+        465,
+        25470,
+        5790,
+        3813,
+        2792,
+        2030,
+        72,
+        3295,
+        289,
+        13
+      ],
+      "temperature": null,
+      "avg_logprob": null,
+      "compression_ratio": null,
+      "no_speech_prob": null,
+      "words": [
+        {
+          "word": " düz",
+          "start": 1.96,
+          "end": 2.22,
+          "probability": 0.4894698124844581,
+          "tokens": [
+            274,
+            4934
+          ]
+        },
+        {
+          "word": " bir",
+          "start": 2.22,
+          "end": 2.4,
+          "probability": 0.908337414264679,
+          "tokens": [
+            1904
+          ]
+        },
+        {
+          "word": " rampa",
+          "start": 2.4,
+          "end": 2.92,
+          "probability": 0.83442622423172,
+          "tokens": [
+            12428,
+            64
+          ]
+        },
+        {
+          "word": " en",
+          "start": 2.92,
+          "end": 3.14,
+          "probability": 0.8613656163215637,
+          "tokens": [
+            465
+          ]
+        },
+        {
+          "word": " kısa",
+          "start": 3.24,
+          "end": 3.4,
+          "probability": 0.8276614248752594,
+          "tokens": [
+            25470,
+            5790
+          ]
+        },
+        {
+          "word": " mesafeyi",
+          "start": 3.4,
+          "end": 4.02,
+          "probability": 0.5897032022476196,
+          "tokens": [
+            3813,
+            2792,
+            2030,
+            72
+          ]
+        },
+        {
+          "word": " sunar.",
+          "start": 4.02,
+          "end": 4.22,
+          "probability": 0.6559677422046661,
+          "tokens": [
+            3295,
+            289,
+            13
+          ]
+        }
+      ]
+    }
+  ],
+  "language": "tr",
+  "ori_dict": {
+    "text": " Aynı iki nokta arasında, düz bir rampa en kısa mesafeyi sunar.",
+    "segments": [
+      {
+        "start": 0.1,
+        "end": 4.22,
+        "text": " Aynı iki nokta arasında, düz bir rampa en kısa mesafeyi sunar.",
+        "seek": null,
+        "tokens": [
+          316,
+          25681,
+          20739,
+          33811,
+          1328,
+          594,
+          33119,
+          11,
+          274,
+          4934,
+          1904,
+          12428,
+          64,
+          465,
+          25470,
+          5790,
+          3813,
+          2792,
+          2030,
+          72,
+          3295,
+          289,
+          13
+        ],
+        "temperature": null,
+        "avg_logprob": null,
+        "compression_ratio": null,
+        "no_speech_prob": null,
+        "words": [
+          {
+            "word": " Aynı",
+            "start": 0.1,
+            "end": 0.48,
+            "probability": 0.41580290952697396,
+            "tokens": [
+              316,
+              25681
+            ]
+          },
+          {
+            "word": " iki",
+            "start": 0.48,
+            "end": 0.82,
+            "probability": 0.3482647240161896,
+            "tokens": [
+              20739
+            ]
+          },
+          {
+            "word": " nokta",
+            "start": 0.82,
+            "end": 1.18,
+            "probability": 0.6291474550962448,
+            "tokens": [
+              33811,
+              1328
+            ]
+          },
+          {
+            "word": " arasında,",
+            "start": 1.18,
+            "end": 1.66,
+            "probability": 0.7000070760647455,
+            "tokens": [
+              594,
+              33119,
+              11
+            ]
+          },
+          {
+            "word": " düz",
+            "start": 1.96,
+            "end": 2.22,
+            "probability": 0.4894698124844581,
+            "tokens": [
+              274,
+              4934
+            ]
+          },
+          {
+            "word": " bir",
+            "start": 2.22,
+            "end": 2.4,
+            "probability": 0.908337414264679,
+            "tokens": [
+              1904
+            ]
+          },
+          {
+            "word": " rampa",
+            "start": 2.4,
+            "end": 2.92,
+            "probability": 0.83442622423172,
+            "tokens": [
+              12428,
+              64
+            ]
+          },
+          {
+            "word": " en",
+            "start": 2.92,
+            "end": 3.14,
+            "probability": 0.8613656163215637,
+            "tokens": [
+              465
+            ]
+          },
+          {
+            "word": " kısa",
+            "start": 3.24,
+            "end": 3.4,
+            "probability": 0.8276614248752594,
+            "tokens": [
+              25470,
+              5790
+            ]
+          },
+          {
+            "word": " mesafeyi",
+            "start": 3.4,
+            "end": 4.02,
+            "probability": 0.5897032022476196,
+            "tokens": [
+              3813,
+              2792,
+              2030,
+              72
+            ]
+          },
+          {
+            "word": " sunar.",
+            "start": 4.02,
+            "end": 4.22,
+            "probability": 0.6559677422046661,
+            "tokens": [
+              3295,
+              289,
+              13
+            ]
+          }
+        ]
+      }
+    ],
+    "language": null,
+    "ori_dict": {},
+    "regroup_history": "",
+    "nonspeech_sections": [
+      {
+        "start": 0.0,
+        "end": 0.1
+      },
+      {
+        "start": 0.52,
+        "end": 0.7
+      },
+      {
+        "start": 0.94,
+        "end": 1.02
+      },
+      {
+        "start": 1.22,
+        "end": 1.5
+      },
+      {
+        "start": 1.66,
+        "end": 1.96
+      },
+      {
+        "start": 2.6,
+        "end": 2.64
+      },
+      {
+        "start": 2.8,
+        "end": 2.88
+      },
+      {
+        "start": 3.1,
+        "end": 3.24
+      },
+      {
+        "start": 3.7,
+        "end": 3.78
+      },
+      {
+        "start": 4.0,
+        "end": 4.1
+      },
+      {
+        "start": 4.22,
+        "end": 6.5
+      }
+    ]
+  },
+  "regroup_history": "isp=1_cm=2.5+++0_sp=.* /。/?/？+0+0++++1_sg=0.5+0+0+1_sp=,* /，+0+0++50++1_sl=70++1+0+0+0+0+1_cm=2.5+++0",
+  "nonspeech_sections": [
+    {
+      "start": 0.0,
+      "end": 0.1
+    },
+    {
+      "start": 0.52,
+      "end": 0.7
+    },
+    {
+      "start": 0.94,
+      "end": 1.02
+    },
+    {
+      "start": 1.22,
+      "end": 1.5
+    },
+    {
+      "start": 1.66,
+      "end": 1.96
+    },
+    {
+      "start": 2.6,
+      "end": 2.64
+    },
+    {
+      "start": 2.8,
+      "end": 2.88
+    },
+    {
+      "start": 3.1,
+      "end": 3.24
+    },
+    {
+      "start": 3.7,
+      "end": 3.78
+    },
+    {
+      "start": 4.0,
+      "end": 4.1
+    },
+    {
+      "start": 4.22,
+      "end": 6.5
+    }
+  ]
+}

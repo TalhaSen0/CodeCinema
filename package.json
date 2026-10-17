@@ -10,6 +10,8 @@
     "review:frames": "node tools/capture.mjs",
     "review:transitions": "node tools/review-transitions.mjs",
     "verify:surfaces": "node tools/verify-surfaces.mjs",
+    "review:relationships": "node tools/review-relationships.mjs",
+    "audio:commercial": ".tools\\freya-env\\Scripts\\python.exe tools/audio-commercial.py",
     "verify": "node --test tests/*.test.mjs && node tools/verify.mjs && node tools/verify-surfaces.mjs",
     "new": "node tools/new-film.mjs"
   },

@@ -1,0 +1,171 @@
+{
+  "provider": "freya-small",
+  "policy": {
+    "provider": "freya-small",
+    "language": "tr",
+    "code": {
+      "url": "https://github.com/freyavoiceai/FreyaTTS",
+      "revision": "146d36c1cb6660646be57d31339db4eed9315de3",
+      "license": "Apache-2.0"
+    },
+    "model": {
+      "repo": "freyavoice/Freya-TTS",
+      "revision": "d124e07493615208f58bdd21d432736849ee4230",
+      "license": "Apache-2.0",
+      "files": [
+        "config.json",
+        "model.safetensors",
+        "README.md"
+      ]
+    },
+    "decoder": {
+      "repo": "openbmb/VoxCPM2",
+      "revision": "32279effe8c19989596f05d353d1447f51d9e915",
+      "license": "Apache-2.0",
+      "files": [
+        "audiovae.pth",
+        "README.md"
+      ]
+    },
+    "seed": 9,
+    "steps": 32,
+    "maxModelDownloadBytes": 2000000000,
+    "reviewedOn": "2026-10-16",
+    "basis": "Publisher licenses permit commercial use; not an independent training-data or personality-rights clearance.",
+    "cloning": false,
+    "fallback": "none; never silently reuse Piper",
+    "releaseStatus": "candidate-requires-listening-review"
+  },
+  "adapterSha256": "82b54988878bbcf4fb83e359953485253a5ab158e36b989d43872b8e419eaad5",
+  "downloadBytes": 1109774407,
+  "device": "cuda",
+  "torch": "2.9.1+cu128",
+  "cues": [
+    {
+      "start": 0.8,
+      "end": 7.9,
+      "text": "Bin altı yüz otuz sekiz. Galileo’nun hareket üzerine çalışmaları yayımlanır. En kısa yol, en hızlı yol mudur?",
+      "index": 0,
+      "key": "4a94e0eb37cf31f28a23687b41bd0005bf26d8aef0319f13c89eb7c9d4ec04e5",
+      "sha256": "b127671602f98ba9e0f694e69564837290f7e6df1c1d515f3f61cbb34dba7ce0",
+      "seconds": 7.12,
+      "peak": 0.84930419921875,
+      "rms": 0.062396096208804784,
+      "fitsSlot": false,
+      "requiredSpeed": 1.0244604316546762,
+      "generationSeconds": 2.627848100004485,
+      "reused": false
+    },
+    {
+      "start": 9,
+      "end": 14.2,
+      "text": "Aynı iki nokta arasında, düz bir rampa en kısa mesafeyi sunar.",
+      "index": 1,
+      "key": "16fa52da67367122de35ff4e1b64d9cebf08f276751645e4059988b92a8014fa",
+      "sha256": "a24e00111769698c7756cd5eb954b2b3d74e896dc8693fce446ec1d86438339a",
+      "seconds": 4.08,
+      "peak": 0.727630615234375,
+      "rms": 0.06687447209753694,
+      "fitsSlot": true,
+      "requiredSpeed": 1,
+      "generationSeconds": 0.9798398000129964,
+      "reused": false
+    },
+    {
+      "start": 15,
+      "end": 22.8,
+      "text": "Ama daha dik başlayan bir eğri, cismi önce hızlandırır. Galileo dairesel yayları incelemişti.",
+      "index": 2,
+      "key": "c368e15e1a4c35701faa3f3b56646dd8aa1d9964a0efc9408a98327ed6a350ef",
+      "sha256": "94da09fc7d8f84f61a25307f09c877646bd46f4ed7cd1f7c900751c589e6f0e2",
+      "seconds": 6.28,
+      "peak": 0.933837890625,
+      "rms": 0.0710127731455045,
+      "fitsSlot": true,
+      "requiredSpeed": 1,
+      "generationSeconds": 1.7870488000044134,
+      "reused": false
+    },
+    {
+      "start": 24.8,
+      "end": 32.7,
+      "text": "Bin altı yüz doksan altıda Johann Bernoulli soruyu yeniden ortaya koydu. Ertesi yıl, çözümler yayımlandı.",
+      "index": 3,
+      "key": "2b862a10b95af39b28ba136093968f753345daa0d27869e80b10ca7273a72b73",
+      "sha256": "ae42f367ae1d2f868b20c0701a5e8edb57ee4d136f1d2378108180e58395c30b",
+      "seconds": 7.52,
+      "peak": 0.757171630859375,
+      "rms": 0.0627687908718972,
+      "fitsSlot": true,
+      "requiredSpeed": 1,
+      "generationSeconds": 1.9195841000182554,
+      "reused": false
+    },
+    {
+      "start": 33.2,
+      "end": 40.9,
+      "text": "İdeal koşullarda en hızlı iniş yolu, bir sikloiddir. Başta kazanılan hız, uzun yolu telafi eder.",
+      "index": 4,
+      "key": "39aea0ba12aff1a2482c9ea907fc5c8ea47e19a35903c6b752c48be250dff967",
+      "sha256": "b41739acbf5201bcf780c5b62317157b1311f26518ca161f93c073148e1d36b9",
+      "seconds": 9.6,
+      "peak": 0.9273681640625,
+      "rms": 0.06052061737101607,
+      "fitsSlot": false,
+      "requiredSpeed": 1.2715231788079477,
+      "generationSeconds": 2.473249800008489,
+      "reused": false
+    },
+    {
+      "start": 42.2,
+      "end": 47.2,
+      "text": "Bilim bazen mesafeyi değil, doğru soruyu kısaltır.",
+      "index": 5,
+      "key": "a78730066e7679b388e18d0cd1e90267aa084eafc3517e1db951f12ce4ea102c",
+      "sha256": "fe2f0188448df61a5c621325be62e1bf9b5d1e1edb988c89901016e8916c69a5",
+      "seconds": 3.12,
+      "peak": 0.684173583984375,
+      "rms": 0.07318314714274345,
+      "fitsSlot": true,
+      "requiredSpeed": 1,
+      "generationSeconds": 0.8417981999809854,
+      "reused": false
+    }
+  ],
+  "files": {
+    "model": {
+      "config.json": {
+        "sha256": "898c9a951a20f960e0936d4e222c2a4044d383f5691efa1a614d812812956a67",
+        "bytes": 92
+      },
+      "model.safetensors": {
+        "sha256": "9e5828ce9eb6aaf197adc5cb098e2e80e8ff301d238add631418c5557fa08b22",
+        "bytes": 732811956
+      },
+      "README.md": {
+        "sha256": "f3958bb3f6d97c7b1b06106498016bb8bca185efc5323d58ab36388c07c14385",
+        "bytes": 3298
+      }
+    },
+    "decoder": {
+      "audiovae.pth": {
+        "sha256": "94b5d51e107e0507d4acc976cfdadb64edd6fd06d1f751dadbf2fd1594274bf1",
+        "bytes": 376951122
+      },
+      "README.md": {
+        "sha256": "c18d2ffbfb2f0aec770481c967842aee6c200cde65f6b033efd892a849986fda",
+        "bytes": 7939
+      }
+    }
+  },
+  "status": "candidate-requires-listening-review",
+  "subjectiveAudioReviewed": false,
+  "listeningReel": {
+    "file": "listening-reel.wav",
+    "sha256": "7b753e213167d793ca224ec05b6173c9e0bd0202f6f70f3f7b968f7f35a7b9d5",
+    "gapSeconds": 1,
+    "timedToFilm": false
+  },
+  "peakAllocatedVRAM": 1570077184,
+  "allCuesGenerated": true
+}

@@ -1,0 +1,66 @@
+{
+  "errors": [],
+  "overflow": [],
+  "checks": [
+    {
+      "t": 0,
+      "repeat": true,
+      "cold": true,
+      "hash": "1e7204a48538ea73b7f3193f46818604472ddfdc6326e571ffac48dbcb018cb6"
+    },
+    {
+      "t": 3,
+      "repeat": true,
+      "cold": true,
+      "hash": "2e029888a41ab1c7472f47991cee4777664f7ac9c739c5c11d49255e82d1b76a"
+    },
+    {
+      "t": 7.6,
+      "repeat": true,
+      "cold": true,
+      "hash": "81b5ce9b69652b52060947f68a1809527cbf0a119cd7642373f08db5818e8312"
+    },
+    {
+      "t": 8.1,
+      "repeat": true,
+      "cold": true,
+      "hash": "0b2e64bbcfe69b2247616b14bb70feee129797fd446eb38a8f1d50fe0e3dc575"
+    },
+    {
+      "t": 10,
+      "repeat": true,
+      "cold": true,
+      "hash": "383c9132e2e6c834ba53890f231e1cd3f7ea2d870b7d4233186fb83caa08a18e"
+    },
+    {
+      "t": 17,
+      "repeat": true,
+      "cold": true,
+      "hash": "f9773ffa8cbdbc49701ddc297dac52f89920aa58038a2323a45cf73ac1ecdfd4"
+    },
+    {
+      "t": 23.7,
+      "repeat": true,
+      "cold": true,
+      "hash": "23740473307e871ffc1a3ccc8e32213b67aa149aa447b880fa2e18a4e7b69e1d"
+    },
+    {
+      "t": 24.1,
+      "repeat": true,
+      "cold": true,
+      "hash": "1fc9612864e485aace2400941845fa6db5d9919f93074e727232eb3a8dbc5aed"
+    },
+    {
+      "t": 27,
+      "repeat": true,
+      "cold": true,
+      "hash": "95146bc3b97d5b72faf5017d68216c81bcdb34e793503c157e968bdf80e6d6f5"
+    },
+    {
+      "t": 31.9,
+      "repeat": true,
+      "cold": true,
+      "hash": "598d26aaf0420cddbc79945e1a43b0ebed8cc93dd7251d28f99693b86f589a6e"
+    }
+  ]
+}

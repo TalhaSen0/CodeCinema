@@ -1,0 +1,41 @@
+{
+  "film": "salincagin-sirri",
+  "voiceId": "d1-02552",
+  "duration": 32,
+  "narrationStatus": "complete-needs-listening",
+  "cues": [
+    {
+      "index": 0,
+      "text": "İki sarkaç. Aynı başlangıç, farklı ritimler.",
+      "seconds": 4.76,
+      "sha256": "04014fbe6826c62a024bfc297aca4614046c1de5e791b7705b17922a1d5a9ad9"
+    },
+    {
+      "index": 1,
+      "text": "Kısa olan acele eder. Uzun olan ağırdan alır.",
+      "seconds": 4.4,
+      "sha256": "2b1d1bc09165373dbcae99f55d13b911e4bfa81926857d9ef3cb544951719a2a"
+    },
+    {
+      "index": 2,
+      "text": "Küçük salınımlarda, uzunluk dört katına çıkarsa tur süresi iki katına çıkar.",
+      "seconds": 5.8,
+      "sha256": "15129370db31fd92b70aa9d82355f01b841645edb4ca0f2bb43b4bd107063af0"
+    },
+    {
+      "index": 3,
+      "text": "Bazen zamanı değiştirmek için, yalnızca bir ipi uzatmak yeter.",
+      "seconds": 5.52,
+      "sha256": "d9a60b365b59cd250ba174bbfc6dd3a878aee2132fbef68afd18fba41fcb1a54"
+    }
+  ],
+  "music": "original procedural score",
+  "fallbackVoice": null,
+  "ducking": {
+    "minGain": 0.35,
+    "attackSeconds": 0.3,
+    "holdSeconds": 0.7,
+    "releaseSeconds": 1.4
+  },
+  "peak": 0.4149037276552817
+}

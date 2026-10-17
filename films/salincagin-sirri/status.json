@@ -1,0 +1,20 @@
+{
+  "id": "salincagin-sirri",
+  "stage": "final-delivered",
+  "creativeRuntime": "Codex session",
+  "brief": "C:\\Users\\TalhaSen\\OneDrive\\Belgeler\\My Apps\\CodeCinema\\briefs\\salincagin-sirri.md",
+  "completed": [
+    "research",
+    "script",
+    "art-direction",
+    "storyboard",
+    "scenes",
+    "audio",
+    "draft",
+    "review",
+    "revision",
+    "final"
+  ],
+  "finalOutput": "renders/salincagin-sirri/2026-10-16-v1/final.mp4",
+  "delivery": "1080p 30 FPS H.264/AAC with locked narrator and original procedural score"
+}

@@ -1,0 +1,587 @@
+{
+  "text": " İdeal koşullarda en hızlı iniş yolu, bir sikloiddir. Başta kazanılan hız, uzun yolu telafi eder.",
+  "segments": [
+    {
+      "start": 0.2,
+      "end": 2.62,
+      "text": " İdeal koşullarda en hızlı iniş yolu,",
+      "seek": null,
+      "tokens": [
+        6601,
+        46394,
+        49251,
+        858,
+        19218,
+        465,
+        276,
+        4041,
+        9811,
+        7408,
+        1165,
+        16290,
+        84,
+        11
+      ],
+      "temperature": null,
+      "avg_logprob": null,
+      "compression_ratio": null,
+      "no_speech_prob": null,
+      "words": [
+        {
+          "word": " İdeal",
+          "start": 0.2,
+          "end": 0.46,
+          "probability": 0.0036921413120580837,
+          "tokens": [
+            6601,
+            46394
+          ]
+        },
+        {
+          "word": " koşullarda",
+          "start": 0.46,
+          "end": 1.22,
+          "probability": 0.5890987948514521,
+          "tokens": [
+            49251,
+            858,
+            19218
+          ]
+        },
+        {
+          "word": " en",
+          "start": 1.22,
+          "end": 1.46,
+          "probability": 0.9534353017807007,
+          "tokens": [
+            465
+          ]
+        },
+        {
+          "word": " hızlı",
+          "start": 1.46,
+          "end": 1.84,
+          "probability": 0.9029879172643026,
+          "tokens": [
+            276,
+            4041,
+            9811
+          ]
+        },
+        {
+          "word": " iniş",
+          "start": 1.84,
+          "end": 2.22,
+          "probability": 0.4990661581978202,
+          "tokens": [
+            7408,
+            1165
+          ]
+        },
+        {
+          "word": " yolu,",
+          "start": 2.22,
+          "end": 2.62,
+          "probability": 0.46583424260218936,
+          "tokens": [
+            16290,
+            84,
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "start": 2.76,
+      "end": 3.68,
+      "text": " bir sikloiddir.",
+      "seek": null,
+      "tokens": [
+        1904,
+        262,
+        1035,
+        752,
+        14273,
+        347,
+        13
+      ],
+      "temperature": null,
+      "avg_logprob": null,
+      "compression_ratio": null,
+      "no_speech_prob": null,
+      "words": [
+        {
+          "word": " bir",
+          "start": 2.76,
+          "end": 2.76,
+          "probability": 0.06108751520514488,
+          "tokens": [
+            1904
+          ]
+        },
+        {
+          "word": " sikloiddir.",
+          "start": 2.76,
+          "end": 3.68,
+          "probability": 0.4413551489512126,
+          "tokens": [
+            262,
+            1035,
+            752,
+            14273,
+            347,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "start": 3.72,
+      "end": 6.46,
+      "text": " Başta kazanılan hız, uzun yolu telafi eder.",
+      "seek": null,
+      "tokens": [
+        28942,
+        1328,
+        30623,
+        282,
+        50095,
+        276,
+        4041,
+        11,
+        16851,
+        409,
+        16290,
+        84,
+        15284,
+        2792,
+        72,
+        23252,
+        13
+      ],
+      "temperature": null,
+      "avg_logprob": null,
+      "compression_ratio": null,
+      "no_speech_prob": null,
+      "words": [
+        {
+          "word": " Başta",
+          "start": 3.72,
+          "end": 4.0,
+          "probability": 0.6744513213634491,
+          "tokens": [
+            28942,
+            1328
+          ]
+        },
+        {
+          "word": " kazanılan",
+          "start": 4.0,
+          "end": 4.58,
+          "probability": 0.8428910772005717,
+          "tokens": [
+            30623,
+            282,
+            50095
+          ]
+        },
+        {
+          "word": " hız,",
+          "start": 4.58,
+          "end": 5.3,
+          "probability": 0.7401447892189026,
+          "tokens": [
+            276,
+            4041,
+            11
+          ]
+        },
+        {
+          "word": " uzun",
+          "start": 5.3,
+          "end": 5.54,
+          "probability": 0.8461691439151764,
+          "tokens": [
+            16851,
+            409
+          ]
+        },
+        {
+          "word": " yolu",
+          "start": 5.54,
+          "end": 5.8,
+          "probability": 0.9426414668560028,
+          "tokens": [
+            16290,
+            84
+          ]
+        },
+        {
+          "word": " telafi",
+          "start": 5.8,
+          "end": 6.24,
+          "probability": 0.5914027641216913,
+          "tokens": [
+            15284,
+            2792,
+            72
+          ]
+        },
+        {
+          "word": " eder.",
+          "start": 6.24,
+          "end": 6.46,
+          "probability": 0.8336341977119446,
+          "tokens": [
+            23252,
+            13
+          ]
+        }
+      ]
+    }
+  ],
+  "language": "tr",
+  "ori_dict": {
+    "text": " İdeal koşullarda en hızlı iniş yolu, bir sikloiddir. Başta kazanılan hız, uzun yolu telafi eder.",
+    "segments": [
+      {
+        "start": 0.2,
+        "end": 6.46,
+        "text": " İdeal koşullarda en hızlı iniş yolu, bir sikloiddir. Başta kazanılan hız, uzun yolu telafi eder.",
+        "seek": null,
+        "tokens": [
+          6601,
+          46394,
+          49251,
+          858,
+          19218,
+          465,
+          276,
+          4041,
+          9811,
+          7408,
+          1165,
+          16290,
+          84,
+          11,
+          1904,
+          262,
+          1035,
+          752,
+          14273,
+          347,
+          13,
+          28942,
+          1328,
+          30623,
+          282,
+          50095,
+          276,
+          4041,
+          11,
+          16851,
+          409,
+          16290,
+          84,
+          15284,
+          2792,
+          72,
+          23252,
+          13
+        ],
+        "temperature": null,
+        "avg_logprob": null,
+        "compression_ratio": null,
+        "no_speech_prob": null,
+        "words": [
+          {
+            "word": " İdeal",
+            "start": 0.2,
+            "end": 0.46,
+            "probability": 0.0036921413120580837,
+            "tokens": [
+              6601,
+              46394
+            ]
+          },
+          {
+            "word": " koşullarda",
+            "start": 0.46,
+            "end": 1.22,
+            "probability": 0.5890987948514521,
+            "tokens": [
+              49251,
+              858,
+              19218
+            ]
+          },
+          {
+            "word": " en",
+            "start": 1.22,
+            "end": 1.46,
+            "probability": 0.9534353017807007,
+            "tokens": [
+              465
+            ]
+          },
+          {
+            "word": " hızlı",
+            "start": 1.46,
+            "end": 1.84,
+            "probability": 0.9029879172643026,
+            "tokens": [
+              276,
+              4041,
+              9811
+            ]
+          },
+          {
+            "word": " iniş",
+            "start": 1.84,
+            "end": 2.22,
+            "probability": 0.4990661581978202,
+            "tokens": [
+              7408,
+              1165
+            ]
+          },
+          {
+            "word": " yolu,",
+            "start": 2.22,
+            "end": 2.62,
+            "probability": 0.46583424260218936,
+            "tokens": [
+              16290,
+              84,
+              11
+            ]
+          },
+          {
+            "word": " bir",
+            "start": 2.76,
+            "end": 2.76,
+            "probability": 0.06108751520514488,
+            "tokens": [
+              1904
+            ]
+          },
+          {
+            "word": " sikloiddir.",
+            "start": 2.76,
+            "end": 3.68,
+            "probability": 0.4413551489512126,
+            "tokens": [
+              262,
+              1035,
+              752,
+              14273,
+              347,
+              13
+            ]
+          },
+          {
+            "word": " Başta",
+            "start": 3.72,
+            "end": 4.0,
+            "probability": 0.6744513213634491,
+            "tokens": [
+              28942,
+              1328
+            ]
+          },
+          {
+            "word": " kazanılan",
+            "start": 4.0,
+            "end": 4.58,
+            "probability": 0.8428910772005717,
+            "tokens": [
+              30623,
+              282,
+              50095
+            ]
+          },
+          {
+            "word": " hız,",
+            "start": 4.58,
+            "end": 5.3,
+            "probability": 0.7401447892189026,
+            "tokens": [
+              276,
+              4041,
+              11
+            ]
+          },
+          {
+            "word": " uzun",
+            "start": 5.3,
+            "end": 5.54,
+            "probability": 0.8461691439151764,
+            "tokens": [
+              16851,
+              409
+            ]
+          },
+          {
+            "word": " yolu",
+            "start": 5.54,
+            "end": 5.8,
+            "probability": 0.9426414668560028,
+            "tokens": [
+              16290,
+              84
+            ]
+          },
+          {
+            "word": " telafi",
+            "start": 5.8,
+            "end": 6.24,
+            "probability": 0.5914027641216913,
+            "tokens": [
+              15284,
+              2792,
+              72
+            ]
+          },
+          {
+            "word": " eder.",
+            "start": 6.24,
+            "end": 6.46,
+            "probability": 0.8336341977119446,
+            "tokens": [
+              23252,
+              13
+            ]
+          }
+        ]
+      }
+    ],
+    "language": null,
+    "ori_dict": {},
+    "regroup_history": "",
+    "nonspeech_sections": [
+      {
+        "start": 0.0,
+        "end": 0.2
+      },
+      {
+        "start": 0.48,
+        "end": 0.54
+      },
+      {
+        "start": 0.68,
+        "end": 0.7
+      },
+      {
+        "start": 1.58,
+        "end": 1.64
+      },
+      {
+        "start": 2.02,
+        "end": 2.08
+      },
+      {
+        "start": 2.48,
+        "end": 2.56
+      },
+      {
+        "start": 2.7,
+        "end": 2.78
+      },
+      {
+        "start": 2.9,
+        "end": 2.94
+      },
+      {
+        "start": 3.26,
+        "end": 3.32
+      },
+      {
+        "start": 3.44,
+        "end": 3.62
+      },
+      {
+        "start": 3.8,
+        "end": 3.86
+      },
+      {
+        "start": 3.98,
+        "end": 4.0
+      },
+      {
+        "start": 4.82,
+        "end": 5.22
+      },
+      {
+        "start": 6.08,
+        "end": 6.1
+      },
+      {
+        "start": 6.46,
+        "end": 6.94
+      }
+    ]
+  },
+  "regroup_history": "isp=1_cm=2.5+++0_sp=.* /。/?/？+0+0++++1_sg=0.5+0+0+1_sp=,* /，+0+0++50++1_sl=70++1+0+0+0+0+1_cm=2.5+++0",
+  "nonspeech_sections": [
+    {
+      "start": 0.0,
+      "end": 0.2
+    },
+    {
+      "start": 0.48,
+      "end": 0.54
+    },
+    {
+      "start": 0.68,
+      "end": 0.7
+    },
+    {
+      "start": 1.58,
+      "end": 1.64
+    },
+    {
+      "start": 2.02,
+      "end": 2.08
+    },
+    {
+      "start": 2.48,
+      "end": 2.56
+    },
+    {
+      "start": 2.7,
+      "end": 2.78
+    },
+    {
+      "start": 2.9,
+      "end": 2.94
+    },
+    {
+      "start": 3.26,
+      "end": 3.32
+    },
+    {
+      "start": 3.44,
+      "end": 3.62
+    },
+    {
+      "start": 3.8,
+      "end": 3.86
+    },
+    {
+      "start": 3.98,
+      "end": 4.0
+    },
+    {
+      "start": 4.82,
+      "end": 5.22
+    },
+    {
+      "start": 6.08,
+      "end": 6.1
+    },
+    {
+      "start": 6.46,
+      "end": 6.94
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "status": "audition-only",
+  "source": "https://huggingface.co/spaces/ResembleAI/Chatterbox-Multilingual-TTS",
+  "execution": "hosted official demo; not local GPU",
+  "modelVersion": "not verified; do not label V3",
+  "voice": "official demo Turkish reference default; separate reference rights not cleared for final",
+  "commercialReleaseApproved": false,
+  "seed": 9,
+  "cues": [
+    {
+      "index": 1,
+      "text": "Aynı iki nokta arasında, düz bir rampa en kısa mesafeyi sunar.",
+      "seconds": 5.16,
+      "requestSeconds": 8.712266999995336,
+      "peak": 0.999969482421875,
+      "sha256": "f62af89241b5bb13ea54903239b8b3281fb3a4de13aac4a86bfa07a47798abc6"
+    },
+    {
+      "index": 4,
+      "text": "İdeal koşullarda en hızlı iniş yolu, bir sikloiddir. Başta kazanılan hız, uzun yolu telafi eder.",
+      "seconds": 6.92,
+      "requestSeconds": 6.628815599979134,
+      "peak": 0.999969482421875,
+      "sha256": "0f1ca17f5fac5e899d72c72e0cd19ed86b794c0d88c10bd49a4cb89f02664aec"
+    }
+  ],
+  "spaceCodeRevisionObserved": "c612a94210c0af895d6b649850d15b7ccca36594",
+  "spaceRevisionIsNotLoadedModelProof": true,
+  "listeningCopy": {
+    "file": "listening-reel-headroom.wav",
+    "gainDB": -6,
+    "denoising": false,
+    "timeStretch": false
+  },
+  "userListeningReview": {
+    "decision": "accepted as direction, conditional on commercial suitability",
+    "feedback": "Better than Freya; slight distortion acceptable; try mild denoising",
+    "polishedVersionAccepted": false
+  }
+}

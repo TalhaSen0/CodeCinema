@@ -1,0 +1,8 @@
+<!doctype html><html lang="tr"><meta charset="utf-8"><title>CodeCinema ilişki laboratuvarı</title>
+<style>body{margin:0;background:#10202b;color:#eee;font:16px system-ui}canvas{width:100%;max-height:78vh;object-fit:contain;display:block}label{display:inline-block;padding:12px}input{width:45vw}button,select{font:inherit;padding:8px;background:#203847;color:#fff;border:1px solid #789;border-radius:4px}nav{padding:12px}a{color:#9cd9ff}</style>
+<nav><button id="play">Oynat</button> <button id="restart">Başa dön</button>
+<label>Düzen <select id="variant"><option value="courier">Kurye</option><option value="mechanic">Tamirci</option><option value="archivist">Arşivci</option></select></label>
+<label>Kasıtlı hata <select id="fault"><option value="">Yok</option><option value="connection">Kopuk bilek</option><option value="contact">Temas kaybı</option><option value="occlusion">Yanlış örtüşme</option><option value="shape">Biçim bozulması</option><option value="perspective">Yanlış perspektif</option><option value="temporal">Konum sıçraması</option></select></label>
+<a href="../../review/relationships/courier.mp4">Hazır test videosu</a></nav>
+<canvas></canvas><label>Zaman <input id="scrub" type="range" min="0" max="6" step="0.016666667" value="0"><span id="time"></span> s</label>
+<script type="module" src="./film.mjs"></script></html>

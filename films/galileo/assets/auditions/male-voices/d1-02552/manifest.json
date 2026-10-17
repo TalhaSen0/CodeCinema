@@ -1,0 +1,38 @@
+{
+  "status": "user-approved-voice",
+  "model": "Chatterbox Multilingual",
+  "execution": "official hosted demo; loaded weights version not verified",
+  "modelLicense": "MIT",
+  "referenceLicense": "CC-BY-4.0",
+  "reference": {
+    "voice_id": "d1-02552",
+    "gender": "male",
+    "voice_description": "A man in his thirties with a deep, warm voice, confident and composed, speaking at a moderate pace like a narrator; clean broadcast-quality recording.",
+    "reference_audio": "d1-02552.flac",
+    "reference_text": "Bahçedeki elma ağaçları bu yıl her zamankinden daha erken çiçek açtı.",
+    "rowIndex": 5,
+    "sha256": "376e64a39a1cfcc98b20043669e8f8eb3e84cd1cf91e4011b5260c47097ab359"
+  },
+  "attribution": "Alania Turkish Synthetic Speech by PatientDesk AI, CC BY 4.0. Used as voice reference to generate new Chatterbox narration; audio processed.",
+  "referenceSource": "https://huggingface.co/datasets/cloud0day3/alania-synthetic-speech-tr",
+  "referenceRevision": "277dfc8a2322014099ff72688bcaee12480c4605",
+  "commercialLicenseBasis": "Publisher explicitly permits commercial reuse of synthetic references with attribution.",
+  "finalReleaseApproved": false,
+  "seed": 9,
+  "exaggeration": 0.5,
+  "temperature": 0.8,
+  "cfg": 0.5,
+  "cues": [
+    {
+      "index": 1,
+      "text": "Aynı iki nokta arasında, düz bir rampa en kısa mesafeyi sunar.",
+      "seconds": 6.48,
+      "requestSeconds": 17.211178899975494,
+      "sha256": "7608cadac7a56b68de9e2110627277f882e4a99e8968474ecbdaf1a565bef517"
+    }
+  ],
+  "pending": {
+    "cue4": "Official demo ZeroGPU run quota exceeded"
+  },
+  "selection": "Locked as CodeCinema narrator; no further alternative needed"
+}

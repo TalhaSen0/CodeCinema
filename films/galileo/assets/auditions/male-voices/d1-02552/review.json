@@ -1,0 +1,27 @@
+{
+  "voice": "d1-02552",
+  "duration": 6.48,
+  "sampleRate": 24000,
+  "peak": 0.500732421875,
+  "filter": "afftdn=nr=4:nf=-50:tn=0:gs=6",
+  "paddingSeconds": 0.1,
+  "fadeSeconds": 0.01,
+  "alignmentUncertaintySeconds": 0.1,
+  "timeStretch": false,
+  "pitchShift": false,
+  "humanListeningAccepted": true,
+  "watermark": "No targeted removal; postfilter detection not measured",
+  "cues": [
+    {
+      "cue": 1,
+      "interval": [
+        0.0,
+        4.319999999999999
+      ],
+      "reviewReasons": [],
+      "action": "candidate-trim"
+    }
+  ],
+  "sha256": "aa1ce04ea8ee51b90103b1262f6c4a33a9c80cf5c7ec2893acb8b0a02a89712b",
+  "userFeedback": "ses çok iyi bunu kilitleyelim."
+}

@@ -1,0 +1,33 @@
+{
+  "duration": 13.08,
+  "peak": 0.501800537109375,
+  "preservedSamples": 270721,
+  "silencedSamples": 42721,
+  "commercialReleaseApproved": false,
+  "humanListeningAccepted": false,
+  "cues": [
+    {
+      "cue": 1,
+      "sourceSHA256": "f62af89241b5bb13ea54903239b8b3281fb3a4de13aac4a86bfa07a47798abc6",
+      "action": "candidate-boundary-trim",
+      "reviewReasons": [],
+      "localInterval": [
+        0.01999999999999999,
+        4.159999999999999
+      ]
+    },
+    {
+      "cue": 4,
+      "sourceSHA256": "0f1ca17f5fac5e899d72c72e0cd19ed86b794c0d88c10bd49a4cb89f02664aec",
+      "action": "preserve-full-cue",
+      "reviewReasons": [
+        "invalid-or-zero-word-duration",
+        "low-token-probability"
+      ],
+      "localInterval": [
+        0.0,
+        6.92
+      ]
+    }
+  ]
+}

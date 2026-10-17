@@ -6,7 +6,7 @@
 4. **Art director:** tekrar kullanılan karakter tasarımı, ortam, çizgi, palet ve ışık kuralları. Her shot'ın görsel amacı üretim dosyasındadır.
 5. **Storyboard:** start/end/name/goal verisi. Kamera, page match ve bilimsel hareket aynı timeline ile çalışır.
 6. **Assets/animation:** engine matematik, paint, warp ve fizik yardımcıları; film klasörü özgün set, karakter ve içerik. Her kare doğrudan seek(t).
-7. **Sound:** Piper yerel çıkarım; lisanslı model. Özgün programatik score, room air ve sayfa sesi. Narration ayrı satır WAV'ları, gerçek uzunluk ölçümü, çok az tempo düzeltmesi ve ortak olaylar.
+7. **Sound:** Kilitli tok erkek sesi (`d1-02552` + Chatterbox) veya projeye özel lisanslı model; Piper'a sessiz geri dönüş yok. Özgün programatik score, room air ve efektler. Narration ayrı satır WAV'ları, gerçek uzunluk ölçümü, slot kontrolü ve ortak olaylar. Kota engeli halinde müzikli/altyazılı önizleme teslim edilir.
 8. **Draft:** 960×540/30 FPS MP4. Kare sayısı ceil(duration×FPS). FFmpeg hiçbir kareyi gerçek zaman gecikmesi nedeniyle atlamaz.
 9. **Review:** shot contact sheet, 2 FPS tüm film, el/sayfa, geçiş, yarış ve dönüş için sık şerit. Yüz/el yakın planları ve kodlanmış MP4 kareleri de açılır. İlk üç ana turla sınırlı; düzeltmeler ve kalan sorunlar kalite raporuna yazılır.
 10. **Revision:** en önemli görünür sorunları düzelt; önce/sonra karelerini sakla. Başarılı derleme artistik onay değildir.
